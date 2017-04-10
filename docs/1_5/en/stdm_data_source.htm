@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>STDM Data Source</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>STDM Data Source</h1>
+<p>An STDM report must contain a data source which contains data that will
+    be used in the underlying document. Depending on the desired output of
+    the report, the data source can simply be from an STDM table corresponding
+    to an entity or a database view that represents a more complex relationship
+    between different entities such as those participating in a social tenure
+    relationship. In both cases, the data source must include a set of fields
+    that will be used across the report. These data fields can then be used
+    directly in some data-driven items (such as data labels or maps) or be
+    linked to related fields in other data-driven items (such as attribute
+    table, photo, graphs, etc.). When the report is processed, the data resulting
+    from the queries run on the data source will be dynamically inserted and
+    linked to the corresponding data-driven items based on the item configuration
+    specified at design time.</p>
+<p>If you wish to generate a map based document using the default Social
+    Tenure Views, you need to use the Spatial Unit View. However, if you need
+    to include information about the party in the map based document, you
+    can link it through the <a href="adding_attribute_table.htm">Attribute
+        Table item</a> instead of <a href="adding_a_data_label.htm">Data Label
+        item</a>. However, if your configuration does not allow multiple party
+    records to be linked to a spatial unit record, you can use Party Views
+    as a data source. </p>
+<p>This
+    panel enables you to select a table that will be the source for data label,
+    map, attribute table, photo, and chart. One data source should be used
+    for the entire template. Once you choose a data source, every item you
+    add should either use the data source as a source or provide a linking
+    column to another table that provides the content to a template item.
+    </span></p>
+<p>The
+    panel is located in the right side of Document Designer as highlighted
+    in the image below.</span></p>
+<p><img  src="1_5/en/images/image141.gif" alt="" style=" border:none; width:100%; max-width:480px;"
+        border="0"/></p>
+<p>&#160;</p>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Migration from Previous Version</title>
+
+
+</head>
+
+<body>
+
+
+<div style="width: 100%; position: relative;" id="header">
+    <p style="text-align: right;">&#160;</p>
+</div>
+<p>Migration from
+    the previous versions of STDM is seamless. The migration will not affect
+    your data. The migration process is handled by the Upgrade Module of STDM.
+    The module executes automatically when you login to STDM 1.5 for the first
+    time after upgrading from STDM version 1.0 and above. You can also run
+    it manually to upgrade upto STDM 1.4 configuration by clicking on the
+    Upgrade button in the options Menu. Then, the configuration will be updated
+    automatically to STDM 1.5 configuration. </p>
+<p>When upgrading
+    from STDM 1.0/ 1.1 to STDM 1.5 configuration, the following will take
+    place. </p>
+<ol style="list-style: decimal;">
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">A new <span style="font-weight: bold;">configuration.stc</span>
+        will be created based on <span style="font-weight: bold;">stdmConfig.xml</span>
+        inside the <span style="font-weight: bold;">.stdm</span> folder under
+        the user directory. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">Your existing configuration file,<span style="font-weight: bold;"> 
+	 stdmConfig.xm</span>l will <span style="font-weight: bold;">not</span>
+        be removed. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">A new profile will be created based on the
+        old configuration profile name. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">New tables will be created based on the old
+        table names with a prefix of the first two words of the profile name.
+    </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">The existing tables and data will <span
+            style="font-weight: bold;">not</span>
+        be deleted. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">All the new tables will be populated with data
+        that was stored in the old tables to allow you access your data in
+        the new version. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">Update your templates by replacing the old
+        tables, views, and directories with the new tables, new views, and
+        directories. </p></li>
+    <ul style="list-style: disc;">
+        <ul style="list-style: disc;">
+            <li><p
+                    style="font-family: Cambria, serif; text-align: left;">Custom
+                views will be re-created with the same name with 'new_' prefix.
+                &#160;</p></li>
+            <li><p
+                    style="font-family: Cambria, serif; text-align: left;">Always
+                use views with <span style="font-weight: bold;">new</span>
+                prefix for custom views. </p></li>
+            <li><p
+                    style="font-family: Cambria, serif; text-align: left;">The
+                default <span style="font-weight: bold;">social_tenure_relations</span>
+                view will be [<span style="font-weight: bold;">entity_table_name]_vw_social_tenure_relationship</span>
+                view. There will be a separate view for <span style="font-weight: bold;">Parties,
+			 </span>and<span style="font-weight: bold;"> Spatial Unit Entities.</span>
+            </p></li>
+            <li><p
+                    style="font-family: Cambria, serif; text-align: left;">The
+                views will not be deleted <span>but
+			 you should not use them to create new templates as they will 
+			 not be updated henceforth. Use the new views</span>. </p></li>
+        </ul>
+    </ul>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">&#160;If you upgrade manually while having
+        a newly created configuration through the configuration wizard or
+        the default configuration template, it will be re-named with a format
+        configuration_year_month_date_hour_minute.stc format. E.g.
+        configuration_2016_08_24_02_03.stc.
+        The extension <span style="font-weight: bold;">stc</span> might not
+        be visible based on your Operating System file extension display setting.
+    </p></li>
+</ol>
+<p>When upgrading
+    from STDM 1.4 to STDM 1.5, the following will take place. </p>
+<ol style="list-style: decimal;">
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;">New <span style="font-weight: bold;">Social 
+	 Tenure Relationship Entity</span> columns will be added, namely tenure
+        share, validity start, validity end. </p></li>
+    <li><p style="font-family: Cambria, serif;
+		 text-align: left;"><span style="font-family: Cambria, serif; text-align: left;">The 
+	 existing party_id column in the </span><span style="font-family: Cambria, serif; 
+													 text-align: left; 
+													 font-weight: bold;">Social 
+	 Tenure Relationship Entity </span><span style="font-family: Cambria, serif; 
+											 text-align: left;">will be 
+	 replaced by the name of the entity followed by '_id'. </span></p></li>
+</ol>
+<div style="width: 100%; position: relative;" id="footer">
+    <p>Copyright
+        © 2016 by UN-Habitat. All Rights Reserved</p>
+</div>
+</body>
+</html>

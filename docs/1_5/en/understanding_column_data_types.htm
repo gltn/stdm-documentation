@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Understanding Column Data Types</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Understanding Column Data Types</h1>
+<p>Data type is a
+    categorization of data in an entity. An entity can store different types
+    of data depending on the data type configured on each entity column. Integers,
+    decimal values, strings, lookup values can be stored in one entity but
+    separated by columns of different data types.</p>
+<p>STDM supports
+    twelve different data types for your columns i.e. Varying-length text,
+    Unlimited-length text, Whole number, Decimal number, Date, Date and time,
+    Geometry, Yes/No, Related Entity,&#160;Single Select Lookup, Administrative
+    Spatial Unit, and Multiple Select Lookup.</p>
+<p>Each of this data
+    types are suited for different purpose and are configured differently.
+    The following section will discuss in-depth about each of this data type
+    and show you simple examples on their usage.</p>
+<h3 style="font-family: Cambria, serif;">1. Varying-length text</h3>
+<p>These
+    are alpha-numeric character strings of length <span style="font-style: italic;">n</span>
+    (<span style="font-style: italic;">n</span> should be less than 4000 characters).
+    &#160;If you select this Varying-length text data type and you do not
+    specify a length, STDM will set the column to have a default maximum of
+    30 characters.</p>
+<p>This is selected from</span>
+    QGIS Coordinate Reference System (CRS). It depends on the regional extent
+    of the area you want to work in.</p>
+<p><img  src="1_5/en/images/dt_geometry_prop.png"
+        alt=""
+        style=" border:none; width:100%; max-width:309px;"
+        border="0"/></p>
+<p><span
+        style="font-size: 11pt; font-family: Cambria, serif; font-weight: bold;">Form
+ widget:</span></p>
+<p>None.</p>
+<h3 style="font-family: Cambria, serif;">8. Yes/No</h3>
+<p>This
+    represents a <b><span">True/False</span></b>
+    column which stores a single value from only two possible choices, e.g.
+    <span style="font-style: italic;">True or False, 1 or 0, Yes or No.</span></p>
+<p>Example:</p>
+<table style=" left:0px; top:4071px; border-collapse:separate; width:100%; max-width:190px;"
+       cellspacing="0" border="1">
+    <col style="width: 56.578%;"/>
+    <col style="width: 43.422%;"/>
+    <tr>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Column Name</span></td>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Value</span></td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic; font-family: Cambria, serif;
+				 font-size: 10pt;">running water</p></td>
+        <td><span style="font-family: Cambria, serif; font-style: italic;
+					 font-size: 10pt;">True</span></td>
+    </tr>
+</table>
+<p>Properties
+    to set:</p>
+<p>None</p>
+<p>Form
+    widget:</p>
+<p style="font-size: 11pt; font-family: Cambria, serif; font-weight: normal; 
+	 font-style: italic;">Check Box</p>
+<p><img  src="1_5/en/images/widget_yesno.png" alt=""
+        style=" border:none; width:100%; max-width:294px;"
+        border="0"/></p>
+<h3 style="font-family: Cambria, serif;">9. Related Entity</h3>
+<p>The column with
+    this data type will have a foreign key relationship with another column
+    in a different Entity. Values in a column using Related Entity data type
+    are picked from a Primary Entity, which acts as the master reference.</p>
+<p>&#160;</p>
+<p>Example:</p>
+<table style=" left:0px; top:4383px; border-collapse:separate; width:100%; max-width:196px;"
+       cellspacing="0" border="1">
+    <col style="width: 68.878%;"/>
+    <col style="width: 31.122%;"/>
+    <tr>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Column Name</span></td>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Value</span></td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic; font-family: Cambria, serif;
+				 font-size: 10pt;">enumerator</p></td>
+        <td><span style="font-family: Cambria, serif; font-style: italic;
+					 font-size: 10pt;">5</span></td>
+    </tr>
+    <tr>
+        <td><p style="font-family: Cambria, serif; font-size: 10pt; font-style: italic;">
+            respondent</p></td>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-style: italic;">20</span></td>
+    </tr>
+</table>
+<p>Properties
+    to set:</p>
+<p>Primary Entity
+    - This is the Entity you want to create a relationship with. It is where
+    you pull values from.</p>
+<p>Primary Unique
+    column - This is the column from the <span style="font-style: italic;">Primary
+ Entity.</span> We store this unique key in our <span style="font-style: italic;">Related 
+ Entity</span> column to establish a link with the <span style="font-style: italic;">Primary 
+ Entity.</span></p>
+<p>Display column
+    - Columns to show on the selection form when fetching data from the <span
+            style="font-style: italic;">Primary Entity</span>.</p>
+<p>Widget
+    on form</p>
+<p><img  src="1_5/en/images/widget_related_entity.png"
+        alt=""
+        style=" border:none; width:100%; max-width:467px;"
+        border="0"/></p>
+<h3 style="font-family: Cambria, serif;">10. Single Select Lookup</h3>
+<p>Data type allows
+    you to pick single values from a <span style="font-style: italic;">Lookup
+ Entity</span> that is linked to the column.</p>
+<p>Example:</p>
+<table style=" left:0px; top:4383px; border-collapse:separate; width:100%; max-width:196px;"
+       cellspacing="0" border="1">
+    <col style="width: 68.878%;"/>
+    <col style="width: 31.122%;"/>
+    <tr>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Column Name</span></td>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-weight: bold;">Value</span></td>
+    </tr>
+    <tr>
+        <td><p style="font-style: italic; font-family: Cambria, serif;
+				 font-size: 10pt;">marital_status</p></td>
+        <td><span style="font-family: Cambria, serif; font-style: italic;
+					 font-size: 10pt;">Single</span></td>
+    </tr>
+    <tr>
+        <td><p style="font-family: Cambria, serif; font-size: 10pt; font-style: italic;">gender</p>
+        </td>
+        <td><span style="font-family: Cambria, serif; font-size: 10pt;
+					 font-style: italic;">Female</span></td>
+    </tr>
+</table>
+<p>Properties
+    to set:</p>
+<p>Lookup - This
+    is a Lookup Entity that is linked to a column. Data will be fetched from
+    this lookup.</p>
+<p><img
+         src="1_5/en/images/dt_single_select_lookup_prop.png" alt=""
+        style=" border:none; width:100%; max-width:355px;" border="0"/></p>
+<p>Widget
+    on form:</p>
+<p style="font-size: 11pt; font-family: Cambria, serif; font-weight: normal; 
+	 font-style: italic;">Combo Box</p>
+<p><img  src="1_5/en/images/widget_single_lookup.png"
+        alt=""
+        style=" border:none; width:100%; max-width:480px;"
+        border="0"/></p>
+<h3 style="font-family: Cambria, serif;">11. Administrative Spatial Unit</h3>
+<p>This
+    data type creates a lookup column that fetches its data from the <span
+            style="font-weight: bold;">Administrative Units Entity</span><span
+            style="font-style: italic;">.</span> You are not required to setup
+    the lookup relationship explicitly. Once you choose this data type for
+    your column, STDM will automatically create a <span style="font-weight: bold;">Single
+ Select Lookup</span> pointing to the <span style="font-weight: bold;">Administrative 
+ Units Entity</span> for you.</p>
+<p>Properties
+    to set:</p>
+<p>None</p>
+<p>Widget
+    on form:</p>
+<p><img
+         src="1_5/en/images/widget_administrative_spatial_unit.png" alt=""
+        style=" border:none; width:100%; max-width:466px;" border="0"/></p>
+<h3 style="font-family: Cambria, serif;">12. Multiple Select Lookup</h3>
+<p>The data type
+    allows you to create a multiple selection column. Multiple values for
+    this column are fetched from the <span style="font-weight: bold;">Lookup
+ Entity</span> that you setup on <span style="font-weight: bold;">Column 
+ Property</span> window.</p>
+<p>Properties
+    to set:</p>
+<p>Lookup - This
+    is the Lookup Entity used by the column to fetch multiple values.</p>
+<p><img
+         src="1_5/en/images/dt_single_select_lookup_prop.png" alt=""
+        style=" border:none; width:100%; max-width:355px;" border="0"/></p>
+<p>Widget
+    on form:</p>
+<p style="font-size: 11pt; font-family: Cambria, serif; font-weight: normal; 
+	 font-style: italic;">A list with check Box.</p>
+<p><img
+         src="1_5/en/images/widget_multiple_select_lookup.png" alt=""
+        style=" border:none; width:100%; max-width:628px;" border="0"/></p>
+<h3 style="font-family: Cambria, serif;"><span style="font-family: Cambria, serif;">13. 
+ Auto Generated Code</span></h3>
+<p>This column data
+    type can be used to create codes for unique identifier columns such as
+    structure number, house number, plot number, etc. The data type may have
+    just a serial number such as 001, 002, etc or a code with a prefix such
+    as KE/NRB/0001, E001, etc.</p>
+<p>Properties
+    to set:</p>
+<p>Prefix
+    source</span></p>
+<p>This refers to
+    the entity from which the prefix codes that are added in front of the
+    serial number are drawn from. </p>
+<p>The options are:</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <li><p style="font-size: 11pt; font-family: Cambria, serif;"><span
+                style="font-weight: bold;">None</span> - only a serial number
+            will be shown. </p></li>
+        <li><p style="font-size: 11pt; font-family: Cambria, serif;"><span
+                style="font-weight: bold;">admin_spatial_unit_set</span> - the
+            code prefixes are drawn based on the Administrative Units Manager,
+            in which the codes of the selected administrative unit and higher
+            labels are added in front of the serial number. &#160;</p></li>
+        <li><p style="font-size: 11pt; font-family: Cambria, serif;"><span
+                style="font-weight: bold;">current profile lookup entities</span>
+            - the code prefixes are drawn from the code of the selected lookup
+            value. &#160;</p></li>
+    </ul>
+</ul>
+<p>Separator</p>
+<p>This refers to
+    the symbol or character separating each code element. </p>
+<p>Leading
+    Zero</p>
+<p>This refers to
+    the zeros that are part of the serial number that are added in front of
+    the increasing numbers. The image below illustrates the <span style="font-weight: bold;">Auto
+ Generated Code</span> <span style="font-weight: bold;">Property</span>.
+</p>
+<p><img  src="1_5/en/images/auto_generate.PNG" alt=""
+        style=" border:none; width:100%; max-width:377px;"
+        border="0"/></p>
+<p>Widget
+    on form:</p>
+<p>You
+    need to click on the code icon on the right side of the form widget to
+    generate the unique code. If you have chosen a prefix source in the <span
+            style="font-weight: bold;">Auto Generated Code</span> <span style="font-weight: bold;">Property,
+ </span>you need to<span style="font-weight: bold;"> </span>select the
+    prefix source from the <span style="font-weight: bold;">Administrative
+ Unit Selector</span> or the <span style="font-weight: bold;">Lookup Value 
+ Selector</span> that helps you to generate the code.</p>
+<p>The
+    image below shows auto-generated code widget created with a prefix source
+    from <span style="font-weight: bold;">admin_spatial_unit_set</span>, hyphen
+    separator and two leading zeros (00). </p>
+<p><img
+         src="1_5/en/images/code.PNG" alt="" style=" border:none; width:100%; max-width:285px;" border="0"/>
+</p>
+<p>The
+    image below shows auto generated code widget created with a prefix source
+    from a<span style="font-weight: bold;"> lookup entity</span>, underscore
+    separator and no leading zeros. </p>
+<p><img  src="1_5/en/images/lookup_code.PNG" alt="" style=" border:none; width:100%; max-width:276px;"
+        border="0"/></p>
+<p>The
+    image below shows auto generated code widget created with a no prefix
+    source, no separator and two leading zeroes (00).</p>
+<p><img
+         src="1_5/en/images/serial_code.PNG" alt="" style=" border:none; width:100%; max-width:277px;"
+        border="0"/></p>
+<p><span
+        style="font-weight: bold;">Note</span>: If the prefix source is None,
+    the <span style="font-weight: bold;">Separator</span> drop down is disabled
+    because separator has no usage in this case. </p>
+
+</body>
+</html>

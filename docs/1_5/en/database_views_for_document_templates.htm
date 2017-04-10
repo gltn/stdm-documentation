@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+    <meta name="search-keywords" content="views, tables, database, data source"/>
+
+    <title>Database Views for Document Templates</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Database Views for Document Templates</h1>
+<h2>What is Database View?</h2>
+<p>Database
+    View</span> is just a table that is created using a database query. The
+    query could be from one or more tables. For instance, you can create a
+    view that only shows female party members. This view automatically gets
+    updated when new female party members are added. If we also remove a female
+    from the party table, the record will be removed from the view.</p>
+<h2>STDM Views</h2>
+<p>STDM configuration
+    automatically creates <span style="font-weight: bold;">Social Tenure Relationship</span>
+    V<span style="font-weight: bold;">iews</span> that lists details of party,
+    spatial unit and tenure related information for party records that are
+    linked to a spatial unit using the <a href="creating_social_tenure_relationship.htm">Social
+        Tenure Relationship module</a>. The STDM <span style="font-weight: bold;">Views</span>
+    are classified into two major groups. </p>
+<p>
+    Party views</span> - are created for each party entity that is participating
+    in STR. <span style="font-weight: bold;">Party Views</span> contain:</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <ul style="list-style: disc;">
+            <li><p>An
+                auto generated serial id</p></li>
+            <li><p>The
+                party records data</p></li>
+            <li><p>The
+                social tenure relationship of the party records</p></li>
+            <li><p>The
+                spatial unit id they are linked to. </p></li>
+        </ul>
+    </ul>
+</ul>
+<p>Spatial
+    Unit view</span> - lists all records linked to parties through STR. The
+    <span style="font-weight: bold;">Spatial Unit View </span>contains:</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <ul style="list-style: disc;">
+            <li><p><span
+                    style="font-weight: bold;">Spatial Unit id</span> as an <span
+                    style="font-weight: bold;">id</span> column</p></li>
+            <li><p>All
+                other <span style="font-weight: bold;">Spatial Unit</span>
+                record data</p></li>
+        </ul>
+    </ul>
+</ul>
+<p>These views are
+    very useful to generate documents such as certificates. Ineligible person
+    cannot be listed in the <span style="font-weight: bold;">Social Tenure
+ Relationship Views</span>, which thus act as a good checking mechanism
+    when issuing a certificate. &#160;</p>
+<h3>View Names</h3>
+<p>The STDM <span style="font-weight: bold;">View</span> name is generated
+    using the following format.</p>
+<p>[table_name]_vw_social_tenure_relationship</p>
+<p>In place of the
+    <span style="font-weight: bold;">table_name</span>, the table name of
+    the entity is used. </p>
+<h3>View Layer</h3>
+<p><span style="font-weight: bold;">Spatial Views</span> in STDM can be
+    visualized as a map layer in QGIS <span style="font-weight: bold;">Map
+ Canvas</span>. To add a view layer into the <span style="font-weight: bold;">Map 
+ Canvas</span>, follow the steps in <a href="adding_a_spatial_entity_layer.htm">Adding
+        a Spatial Entity Layer</a> topic. The only thing you need to do while
+    adding the layer is, identifying the view layer. If you have not set a
+    display name, the layer name looks like your <span style="font-weight: bold;">Spatial
+ Unit</span> table name followed by<span
+            style="font-weight: bold;"> _vw_social_tenure_relationship</span>.</p>
+<h2>Viewing View Data</h2>
+<p>Viewing the data of a view is possible using the QGIS <span style="font-weight: bold;">Attribute 
+ Table</span>. Once you add the view layer in the Map Canvas, right-click
+    on the layer in the <span style="font-weight: bold;">Legend</span> panel
+    and click on Open Attribute Table, as shown in the image below. </p>
+<p><img  src="1_5/en/images/layer_attribute_table.PNG" alt=""
+        style=" border:none; width:100%; max-width:502px;" border="0"/></p>
+<p>You will see a table containing the view data.</p>
+<h2>Custom Views</h2>
+<p>Custom
+    views</span> refer to views that are created manually by a user. The <span
+            style="font-weight: bold;">STDM views</span> might not fulfil all
+    your needs. In such cases, you can create custom views. Custom views can
+    help you generate documents for single records. Most importantly, you
+    can create custom views that enable you to produce aggregate reports.</p>
+<h2>Useful Links</h2>
+<p><a
+        href="http://www.postgresqltutorial.com/postgresql-views/">http://www.postgresqltutorial.com/managing-postgresql-views/</a>
+</p>
+<p><a
+        href="http://www.postgresqltutorial.com/postgresql-views/">http://www.postgresqltutorial.com/postgresql-views/</a>
+</p>
+
+</body>
+</html>

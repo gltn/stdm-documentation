@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Adding Map</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Adding Map</h1>
+<p>In STDM, each spatial unit record has a geometry that can be seen in
+    the map canvas. In addition, whenever&#160;a new social tenure relationship
+    is created, a row is also added in<span style="font-weight: bold;"> table_name_vw_social_tenure_relationship</span>
+    view. The table_name could be <span style="font-weight: bold;">Party</span>
+    or <span style="font-weight: bold;">Spatial Unit</span> table names. The
+    <span style="font-weight: bold;">Spatial Unit view</span> also adds the
+    geometry of the Spatial Unit. &#160;For more information, read <a
+            href="database_views_for_document_templates.htm">Database
+        Views for Document Templates</a> topic. </p>
+<p><span>To add a map into the template, follow
+ the steps below. </span></p>
+<p><span><span
+>1. Select a
+ data source by choosing a table or a view as shown below. </span></span></p>
+<p><img  src="1_5/en/images/data_source.jpg" alt=""
+        style=" border:none; width:100%; max-width:480px;"
+        border="0"/></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    Only the current profile tables and all views in STDM database load. </p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    When choosing a view, make sure you have chosen the view that is created
+    using current profile tables. You can identify that by looking at the
+    profile name at the beginning of view name. </p>
+<p>2. Select a <span
+        style="font-weight: bold;">referenced table</span>. The <span style="font-weight: bold;">referenced
+ table</span> option is only applicable for view data source (see the image
+    below). &#160;<span style="font-weight: bold;">A referenced table</span>
+    refers to a table that the template will be working for. In other words,
+    the reference table forces the template to only work for a certain entity.
+    &#160;This is useful when <a href="generating_documents_using_templates.htm">Generating
+        a document</a>. </p>
+<p><img  src="1_5/en/images/ref_table.jpg" alt=""
+        style=" border:none; width:100%; max-width:477px;"
+        border="0"/></p>
+<p><span style="font-family: Cambria, serif;
+	 font-size: 11pt;">For this demonstration, the Person table is used 
+ as a referenced table but you can choose any other based on your needs. 
+ </span></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    The above two steps are mandatory for views and the first step is mandatory
+    for table data sources.</p>
+<p>3. Click on the
+    <span style="font-weight: bold;">Add Map</span> button located in STDM
+    Document Designer toolbar (see the image below). This enables you to the
+    draw a data label in the template.</p>
+<p><span><img  src="1_5/en/images/add_map.jpg" alt=""
+              style=" border:none; width:100%; max-width:351px;"
+              border="0"/><br/>
+</span><span style="font-family: Cambria, serif;">4. Start creating a map 
+ box by clicking on one point that will be its top left corner. Then start 
+ dragging the cursor to the bottom right direction to expand its size.</span></p>
+<p>While dragging
+    it, you will see a red box and a cursor that looks like the plus (+) sign
+    <span>as
+ shown in the image below.</span></p>
+<p><img  src="1_5/en/images/map.jpg" alt=""
+        style=" border:none; width:100%; max-width:486px;"
+        border="0"/></p>
+<p>When you release
+    it, a box like the one below<span style="font-weight: bold;"> </span>will
+    be<span style="font-weight: bold;"> </span>created. </p>
+<p><img  src="1_5/en/images/map_drawn.jpg" alt=""
+        style=" border:none; width:100%; max-width:808px;"
+        border="0"/></p>
+<p>5. Make sure you have selected the map as shown in the
+    above image and open the STDM item properties tab as shown below. </p>
+<p><span><img  src="1_5/en/images/image160.gif" alt=""
+              style=" border:none; width:100%; max-width:480px;"
+              border="0"/></span></p>
+<p>6. Select the<span style="font-weight: bold;"> Spatial
+ Field</span>. The spatial field refers to the column holding a geometry.
+    Choose a geometry column from the drop down menu as shown below. </p>
+<p><span><img  src="1_5/en/images/image161.gif" alt=""
+              style=" border:none; width:100%; max-width:477px;"
+              border="0"/> </span></p>
+<p><span>7. Once you have selected the geometry
+ field, click on the Add Button (<img  src="1_5/en/images/add.png" alt=""
+                                      style=" border:none; width:100%; max-width:16px;" border="0"/>) next to the drop
+ down menu, as highlighted below. </span></p>
+<p><span><img  src="1_5/en/images/spatial_geom.jpg" alt=""
+              style=" border:none; width:100%; max-width:478px;"
+              border="0"/></span></p>
+<p>8. Choose the column that will be used as a label for
+    the legend in the highlighted drop down menu below. <span style="font-weight: bold;">Legend
+ label</span> refers to a column that will be used to label the geometry.
+    For instance, if the map is for a spatial unit entity, its label field
+    could be its name or code. </p>
+<p><span><img  src="1_5/en/images/map_legend_label.jpg" alt=""
+              style=" border:none; width:100%; max-width:476px;"
+              border="0"/><br/>
+9. Change the </span><span style="font-weight: bold;">Feature
+ Zoom</span><span>. The Feature Zoom refers to the zoom
+ level of features as compared to the map area. If the value is 1, it means, 
+ the feature will fill the entire map area. If the value is 16, it zooms 
+ out the feature and reduce the feature coverage in the map. For spatial 
+ units, zoom level 1 or 2 is recommended to fill most part of the map (see 
+ the image below). </span></p>
+<p><span>&#160;</span><img  src="1_5/en/images/zoom_level.jpg" alt=""
+                           style=" border:none; width:100%; max-width:480px;"
+                           border="0"/></p>
+<p>10. Click on the Style tab at the bottom to modify the
+    style of the map (see the image below).</p>
+<p><img  src="1_5/en/images/image163.gif" alt=""
+        style=" border:none; width:100%; max-width:480px;" border="0"/>
+</p>
+<p>11. If the default style does not suit you, modify the
+    style. The style tab looks like the image below. </p>
+<p>All the settings below modify the appearance of the feature.
+</p>
+<p><img  src="1_5/en/images/style_tab.jpg" alt=""
+        style=" border:none; width:100%; max-width:477px;" border="0"/></p>
+
+</body>
+</html>

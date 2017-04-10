@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Adding Attribute Table</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Adding Attribute Table</h1>
+<p>Attribute table refers to a table that holds non-spatial data. Attribute
+    table can be used for a single row record or aggregate data. It is created
+    from a specific database table or view. </p>
+<p>To create an attribute table, follow the steps below. </p>
+<p><span style="font-family: Cambria, serif;
+	 font-size: 11pt;">1. Select a data source by choosing a table or a 
+ view as shown below. </span></p>
+<p><img  src="1_5/en/images/attri_data_souce.jpg"
+        alt=""
+        style=" border:none; width:100%; max-width:492px;"
+        border="0"/></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    Only the current profile tables and all views in STDM database load. </p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    When choosing a view, make sure you have chosen the view that is created
+    using current profile tables. &#160;You can identify that by looking at
+    the profile name at the beginning of view name. </p>
+<p>2. Select a referenced
+    table if you have chosen a view in the data sources (see the image below).
+    &#160;A referenced table refers to a table that the template will be working
+    for. In other words, the reference table forces the template to only work
+    for a certain entity. &#160;This is useful when <a
+            href="generating_documents_using_templates.htm">Generating
+        a document</a>. </p>
+<p><img  src="1_5/en/images/ref_table.jpg" alt=""
+        style=" border:none; width:100%; max-width:477px;"
+        border="0"/></p>
+<p><span style="font-family: Cambria, serif;
+	 font-size: 11pt;">For this demonstration, the Person table is used 
+ as a referenced table but you can choose any other based on your needs. 
+ </span></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    The above two steps are mandatory for views and the first step is mandatory
+    for table data sources.</p>
+<p>3. Click on the
+    <span style="font-weight: bold;">Add attribute table</span> button located
+    in STDM Document Designer toolbar (see the image below).</p>
+<p><img  src="1_5/en/images/attri_tool.jpg" alt=""
+        style=" border:none; width:100%; max-width:351px;"
+        border="0"/></p>
+<p>4. Start creating
+    a table box by clicking on one point in the template page that will be
+    its top left corner of the table. Then start dragging the cursor to the
+    bottom right direction to expand its size.</p>
+<p>While dragging
+    it, you can see a red box and a cursor that looks like the plus (+) sign.
+</p>
+<p><img  src="1_5/en/images/map.jpg" alt=""
+        style=" border:none; width:100%; max-width:486px;"
+        border="0"/></p>
+<p>When you release
+    it, a sample table is created (see the image below). This table changes
+    based on your selection in <span style="font-weight: bold;">STDM item
+ properties.</span></p>
+<p><img  src="1_5/en/images/attri_def_tbl.jpg" alt=""
+        style=" border:none; width:100%; max-width:348px;"
+        border="0"/></p>
+<p><span style="font-family: Cambria, serif;">5</span><span
+>. Make sure you have selected the table box as shown
+ in the above image. Proceed to open the STDM item properties tab as shown 
+ below. </span></p>
+<p><img  src="1_5/en/images/attri_prop.jpg" alt=""
+        style=" border:none; width:100%; max-width:784px;" border="0"/></p>
+<p><span style="font-weight: bold;">References</span> refers
+    to any table that is used as a data source of the table. Here you will
+    find all tables and views of the current profile. Choose a table that
+    you want the table data to be based on. </p>
+<p><span style="font-weight: bold;">Data source</span> <span
+        style="font-weight: bold;">field</span> refers to a data source column
+    that is used to link the reference with the data source table. </p>
+<p><span style="font-weight: bold;">Referencing</span> refers
+    to the references table column linking the data source, which has similarity
+    with Data source field in its function here. </p>
+<p>&#160;6. The attribute table is created based on the data
+    source and properties you have set. See an unformatted attribute table
+    below. &#160;</p>
+<p><img  src="1_5/en/images/attr_tab_no_format.JPG" alt=""
+        style=" border:none; width:100%; max-width:1114px;" border="0"/></p>
+<p>The rest of the steps show how you can format the table.
+</p>
+<p>7. Style and format the attribute table. The table is
+    formatted and styled using Item properties tab, as shown below. </p>
+<p>See the descriptions on the image below. </p>
+<p><img  src="1_5/en/images/attri_item_prop.jpg" alt=""
+        style=" border:none; width:100%; max-width:706px;" border="0"/></p>
+<p>To make style changes, refer to the above image on the
+    <span style="font-weight: bold;">Item properties</span> and scroll down
+    to make more changes. </p>
+<p>To format the attribute table, click on the <span style="font-weight: bold;">Attributes...</span>
+    button that is highlighted in the above image of the Item properties.
+</p>
+<p>When you click on <span style="font-weight: bold;">Attributes...</span>
+    button, you will see the following window. </p>
+<p><img  src="1_5/en/images/attri_option.JPG" alt=""
+        style=" border:none; width:100%; max-width:765px;" border="0"/></p>
+<p>The buttons of <span style="font-weight: bold;">Attributes</span>
+    dialog are explained below. </p>
+<p><img  src="1_5/en/images/attri_options_explained609147304.jpg" alt=""
+        style=" border:none; width:100%; max-width:1012px;" border="0"/></p>
+<p>a. Adding a column</p>
+<p>By default, all the columns in a table are loaded. You
+    may need to remove unwanted columns to create your final table. </p>
+<p>If you accidentally remove columns that you might require,
+    you can add them using the add button as shown in the above image. </p>
+<p>An empty newly added column looks like the image shown
+    below. </p>
+<p><img  src="1_5/en/images/attr_new_column.jpg" alt=""
+        style=" border:none; width:100%; max-width:830px;" border="0"/></p>
+<p>You then have to choose the column by clicking on and
+    choosing columns from a drop down menu as shown below. </p>
+<p><img  src="1_5/en/images/attr_tab_add_column.JPG" alt=""
+        style=" border:none; width:100%; max-width:824px;" border="0"/></p>
+<p>b. Removing columns that are not needed</p>
+<p>To remove a column, select on a row and click on the Remove
+    button. </p>
+<p>b. Formatting the column names</p>
+<p>Columns of STDM database or any other database have an
+    underscore instead of spaces and lower cases instead of title cases. This
+    may not be desirable in the generated document. </p>
+<p>The appearance of the column can be changed in the Attributes
+    dialog by manually typing preferred heading of the column under the Heading
+    as highlighted in the image below.</p>
+<p><img  src="1_5/en/images/attri_format_heading.jpg" alt=""
+        style=" border:none; width:100%; max-width:660px;" border="0"/></p>
+<p>c. Change alignment of columns by choosing your preferred
+    alignment under the Alignment column.</p>
+<p>8. Once you are done, click on&#160;the <span style="font-weight: bold;">OK</span>
+    button of the attributes dialog to save and close the dialog. See the
+    image below. </p>
+<p><img  src="1_5/en/images/attri_save_table.jpg" alt=""
+        style=" border:none; width:100%; max-width:832px;" border="0"/></p>
+<p>9. Once you click on the <span style="font-weight: bold;">OK</span>
+    button, the table gets updated. The image below shows the final table
+    customized on the bases of above steps. </p>
+<p><img  src="1_5/en/images/attr_final_table.JPG" alt=""
+        style=" border:none; width:100%; max-width:414px;" border="0"/></p>
+<p><span style="font-weight: bold;">Note</span>: Currently,
+    due to a bug in QGIS Print Composer, the formatting will be lost if you
+    open the template again. </p>
+<p>Thus, it is advised to format the table before saving
+    the template for the last time. </p>
+<p>&#160;</p>
+
+</body>
+</html>

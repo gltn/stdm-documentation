@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Formatting spreadsheet data</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Formatting Spreadsheet Data</h1>
+<p>We can import data contained in a CSV (Comma Separated Value) file format
+    created in Microsoft Excel and similar products. The following sub-topics
+    enable you to format your data so as to easily import it into STDM database
+    without an error. </p>
+<h2>Adding a Date into a Cell</h2>
+<p>Importing a CSV file with a date data could fail with an incompatible
+    format in the CSV file and the database. Thus, to properly import data,
+    the date format in the CSV file should be the same as the STDM database.
+</p>
+<p>&#160;</p>
+<p>The STDM database uses the same format as your computer date format.
+</p>
+<p>To know your computer date format, follow the steps below.</p>
+<p>1. Look at the Taskbar date format. </p>
+<p>2. Hover on the date to know which one is the date, month and year (see
+    the image below). </p>
+<p><img  src="1_5/en/images/date.jpg" alt="" style=" border:none; width:100%; max-width:202px;" border="0"/>
+</p>
+<p>The image above shows the date format is <span style="font-weight: bold;">m/d/yyyy. 
+ </span>In other words, month number, date number, and the year separated
+    by forward slash. The format could differ from computer to computer based
+    on your system language. The above date format is based on US English
+    language. &#160;</p>
+<p>Accordingly, the date to be entered in the spreadsheet/CSV file should
+    be in the same format.</p>
+<p>For instance, if the original data has a format of 23/05/2013, it should
+    be formatted to 5/23/2013 in the CSV file so that STDM can accept it.
+</p>
+<p><span style="font-weight: bold;"><span>N</span>ote:</span> If you are
+    importing it into a Server, contact the system administrator to identify
+    the correct date format. </p>
+<h2>Creating Lookups in Microsoft Excel</h2>
+<p><img alt=""  src="1_5/en/images/NewItem140.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:317px;"
+        border="0"/></p>
+<p><span>Drop-down list makes data entry easier
+ in Excel and restricts data recording to that in the list.</span></p>
+<p><span>This eliminates typing errors as well
+ as saving on time. A drop-down list can be in column or row format.</span></p>
+<p><span>Steps to follow when creating a list
+ in Excel column:</span></p>
+<p
+>1<span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Define
+    the entries for the list in the order you want
+    it to appear e.g. [Male, Female} </p>
+<p
+>2<span style='word-spacing:normal; font:6.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+>Type the list in the given cells
+ without having a blank cell in-between.</span></p>
+<p><img alt=""  src="1_5/en/images/NewItem139.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:205px;"
+        border="0"/></p>
+<p>The list may be in the same or different worksheets.</p>
+<ul style="list-style-type: disc; list-style-position: outside; margin-left: 24px; 
+		 text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >For a list in a different worksheet, type the</span>
+        <span>list</span> <span>on that worksheet
+	 and define a</span> <span>name</span> <span>for
+	 it.</span></p></li>
+</ul>
+<p><img alt=""  src="1_5/en/images/NewItem138.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:255px;"
+        border="0"/></p>
+<h3>Adding the List to a Cell</h3>
+<ul style="list-style-type: disc; list-style-position: outside; margin-left: 24px; 
+		 text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >On the working sheet, select the cell you want.</span></p></li>
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >On the</span> <span>Data</span> <span
+    >menu, click</span> <span>Data Validation.</span></p></li>
+</ul>
+<p><img alt=""  src="1_5/en/images/NewItem815.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:352px;"
+        border="0"/></p>
+<ul style="list-style-type: disc; list-style-position: outside; margin-left: 24px; 
+		 text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >Click the first tab</span> <span>Settings</span>
+        <span>tab in the new dialog window.</span></p></li>
+</ul>
+<p><img alt=""  src="1_5/en/images/NewItem136.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:408px;"
+        border="0"/></p>
+<p>In the <span style="font-weight: bold;">Allow</span> drop-down box select
+    <span style="font-weight: bold;">List.</span></p>
+<p><span>Specify the source of the list;</span></p>
+<ul style="list-style-type: disc; list-style-position: outside; margin-left: 24px; 
+		 text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >If the list is in the current worksheet, enter a reference
+	 (range) to your list in the S</span><span>ource</span>
+        <span>box</span></p></li>
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >If the list is in another worksheet, enter the name
+	 that you defined for the list in the</span> <span>Source</span>
+        <span>box.</span></p></li>
+</ul>
+<p><span>In both cases, make sure that the reference or name
+ is preceded by an equal sign (=).</span></p>
+<p><span>To specify whether the cell can be left blank, select
+ or clear the</span> <span>Ignore blank</span> <span>check
+ box</span></p>
+<h3>Removing Drop-down List</h3>
+<ul style="list-style-type: disc; list-style-position: outside; margin-left: 24px; 
+		 text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >Select the cell within the list</span></p></li>
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >Click the</span> <span>Data</span> <span
+    >menu and then click</span> <span>Data
+	 Validation</span><span>.</span></p></li>
+    <li style="margin-left: 0px; text-indent: 0px;"><p><span
+    >In the</span> <span style="font-weight: bold;">Data
+	 validation</span> <span>dialog box that pops up and
+	 click the</span> <span style="font-weight: bold;">Setting</span>
+        <span>tab and then click</span> <span
+                style="font-weight: bold;">Clear
+	 All</span> <span>button at the bottom of the dialog.</span></p></li>
+</ul>
+<p><span>For more information, go to:</span></p>
+<ul style="list-style-position: outside; margin-left: 48px; text-indent: 0px;">
+    <li style="margin-left: 0px; text-indent: 0px;"><a
+            href="http://www.spreadsheets.about.com/od/excelformatting/How_to_Use_Excel_Formatting_Features_Format_Excel_Spreadsheets.htm">http://www.spreadsheets.about.com/od/excelformatting/How_to_Use_Excel_Formatting_Features_Format_Excel_Spreadsheets.htm</a>
+    </li>
+</ul>
+<h3>Capitalizing Cell Text</h3>
+<p>The example uses random cells
+    numbers.</p>
+<p><span>To extract and capitalize the first
+ name from the name collection, use the following function:</span></p>
+<p><span class="rvts124">=IFERROR (PROPER (LEFT (A2, (FIND
+ (&quot; &quot;, TRIM (A2))-1))),&quot;&quot;)</span></p>
+<p><span>To extract and capitalize the last
+ name from the name collection, use the following function:</span></p>
+<p><span class="rvts124">=IFERROR (PROPER (RIGHT (A2, (LEN
+ (TRIM (A2))-FIND (&quot; &quot;, TRIM (A2))))),&quot;&quot;)</span></p>
+<p><span>To extract and capitalize sex information
+ if defined as MALE, FEMALE, M or F in the Sex collection, uses the following 
+ function:</span></p>
+<p><span class="rvts124">=IF(D2=&quot;MALE&quot;,PROPER(D2),IF(D2=&quot;M&quot;,&quot;Male&quot;,IF(D2=&quot;F&quot;,&quot;Female&quot;,IF(D2=&quot;FEMALE&quot;,PROPER(D2)))))</span>
+</p>
+<p><span>To check if an integer cell is defined
+ or set as a blank text if specified as zero:</span></p>
+<p><span class="rvts124">=IF (F2&gt;0, F2,&quot;&quot;)</span></p>
+<p><span>To set an option cell as a blank text
+ it’s specified as NA:</span></p>
+<p><span class="rvts124">=IF (W2=&quot;NA&quot;,&quot;&quot;,
+ PROPER (W2))</span></p>
+<p><span class="rvts108">For more help, visit</span></p>
+<p><span><a href="https://support.office.com/en-us/excel">https://support.office.com/en-us/excel</a><br/>
+</span></p>
+
+</body>
+</html>

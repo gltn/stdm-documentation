@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Logging into STDM</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Logging into STDM</h1>
+<p><span style="color: #000000;">Note:</span> <span
+        style="font-weight: normal; font-style: normal; color: #000000;">Make
+ sure QGIS is started and running while STDM is visible in QGIS interface 
+ tool bar.</span> <span style="font-weight: normal;">&#160;</span></p>
+<p>To start QGIS, look for this Icon <img  src="1_5/en/images/QGis_Logosm.png" alt=""
+                                          style=" border:none; width:100%; max-width:31px;"
+                                          border="0"/>
+    and double click to run it. If you are using the custom build, downloaded
+    from STDM website, click on the QGIS Desktop icon <img  src="1_5/en/images/stdm.png" alt=""
+                                                           style=" border:none; width:100%; max-width:36px;"
+                                                           border="0"/>
+    to start.</p>
+<p><span>1.</span> <span>Click the </span>login
+    menu located under the STDM Menu or the <span>login button</span><img alt=""
+                                                                           src="1_5/en/images/NewItem223.png"
+                                                                          style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:33px;"
+                                                                          border="0"/>
+    &#160;located under the STDM toolbar, as highlighted below. </p>
+<p>Login menu:</p>
+<p><img  src="1_5/en/images/login_menu.jpg" alt=""
+        style=" border:none; width:100%; max-width:159px;" border="0"/></p>
+<p>Login button:</p>
+<p><img  src="1_5/en/images/login_button.jpg" alt=""
+        style=" border:none; width:100%; max-width:125px;" border="0"/></p>
+<p><span>A login dialog will pop up. You are
+ required to &#160;provide login credentials using the default user &#160;(postgres) 
+ created during installation of the software.</span></p>
+<p><span><img  src="1_5/en/images/login_dialog.JPG" alt=""
+              style=" border:none; width:100%; max-width:337px;"
+              border="0"/><br/>
+</span></p>
+<p><span>a.</span> <span style="font-weight: bold;">Username</span><span
+>: The</span><span> default username is
+ </span><span>postgres without quotes. </span><span>An
+ administrator can create user accounts for new users.</span></p>
+<p><span>b.</span> <span style="font-weight: bold;">Password</span><span
+>: Provide the password used when installing STDM using
+ the Bundled Installer or</span> the one created by the system administrator.</p>
+<p><span>If you have installed the required
+ software separately, use the password that you used to login to PostgreSQL 
+ database server. </span></p>
+<p><span style="font-weight: bold;">Note</span><span
+>: If you are intending to use STDM in a network environment,
+ request the system administrator for username and passwords.</span></p>
+<p><img  src="1_5/en/images/login_dialog_filled.JPG" alt=""
+        style=" border:none; width:100%; max-width:337px;" border="0"/></p>
+<p><span>2.</span> <span>Then,
+ click on</span> <span>Login</span> button <span>or
+ hit the </span><span style="font-weight: bold;">Enter</span><span
+> button on the keyboard.</span></p>
+<p><span>The cancel button closes the login
+ dialog and stops the login process.</span></p>
+<p><span style="font-weight: bold;">3</span>.When successfully
+    logged in, you will see the full STDM toolbar as shown below. </p>
+<p><img  src="1_5/en/images/stdm_toolbar.png" alt=""
+        style=" border:none; width:100%; max-width:737px;" border="0"/></p>
+<h2>Logging into a Different Database and Server</h2>
+<p>In addition to logging in to the default STDM database as shown above,
+    you can always change the database settings to login to a different database.
+    This is also possible in the Options module after login as discussed in<a
+            href="Options.htm"> the Options topic</a>. </p>
+<p>To change database properties, follow the steps below. </p>
+<p>1. Click on the database icon located in the login dialog as highlighted
+    below. </p>
+<p>&#160;&#160;<img  src="1_5/en/images/login_db_prop.jpg" alt=""
+                    style=" border:none; width:100%; max-width:271px;" border="0"/></p>
+<p><span>2. A PostgreSQL Database Connection
+ dialog pops up as shown below. </span></p>
+<p><span><img  src="1_5/en/images/db_connection_setting.jpg" alt=""
+              style=" border:none; width:100%; max-width:394px;"
+              border="0"/></span></p>
+<p><span>The PostgreSQL Database Connection
+ loads with the currently used properties. </span></p>
+<p>a. <span>Host </span><span
+        style="font-weight: normal;">refers
+ to</span><span> the location of a computer that has hosted
+ the database server (PostgreSQL). If the database server is installed 
+ in your own computer, you have to enter </span><span style="font-weight: bold;">localhost
+ </span><span>as shown above. However, when PostereSQL that
+ holds the database is installed in an office network, the IP address will 
+ be different from localhost. It could be a number like 192.168.0.23 or 
+ any other number with such format as specified by the system administrator. 
+ This is relevant when STDM is installed for governmental or non-governmental 
+ organizations with a centralized database server. </span></p>
+<p><span>b.</span> <span>Port</span>
+    <span>refers to an endpoint of communication for the database
+ server (postgreSQL). To access the database from STDM, we need to know 
+ its port. The most common port values for PostgreSQL are </span><span
+    >5432, 5433, </span><span style="font-weight: normal;">or
+ any other port as specified during installation.</span></p>
+<p><span>c.</span> <span>Database</span>
+    <span>refers to a storage location in which the entire data
+ of STDM is stored. By default, during installation, it is set as </span><span
+    >stdm</span><span>. You can enter any other
+ database that you want to connect to after installation using PostgreSQL 
+ administration software called pgAdmin III. If you want to use your own 
+ database, make sure the PostGIS extension is installed and added to the 
+ database that STDM uses. Otherwise, STDM cannot run. </span></p>
+<p><span>3</span><span>. After
+ making changes to the database properties, click</span> on the <span>Save</span>
+    <span>button. </span></p>
+<p><span>If you do not want your changes to
+ be saved, press the Cancel button. Clicking on both buttons results in 
+ the closing of the dialog. </span></p>
+<p><span>4. You can now login to the new database
+ that you have specified.</span></p>
+<h2>First Time Login</h2>
+<p>When you login to STDM for the first time you will see
+    the following. </p>
+<p>1. A request to agree with STDM Terms and Conditions.
+</p>
+<p>2. A request to run <a href="getting_started_with_the_configuration_wizard.htm">the
+    Configuration Wizard</a> with a dialog shown below. </p>
+<p><img  src="1_5/en/images/wizard_run.jpg" alt=""
+        style=" border:none; width:100%; max-width:356px;" border="0"/></p>
+<p>The Configuration Wizard enables you to set STDM used
+    folders, create profiles, create database tables for entities, columns,
+    lookup tables, and Social Tenure Relationship that are required by most
+    STDM modules. The Configuration Wizard is discussed under Creating and
+    Customizing STDM Profiles topic starting with <a
+            href="getting_started_with_the_configuration_wizard.htm">Getting
+        Started with the Configuration Wizard topi</a>c. </p>
+<p>You can also use the default profiles of STDM. In this
+    case, you just need to click on the <span style="font-weight: bold;">Next</span>
+    button of the Configuration Wizard until you reach the last page of the
+    wizard. Then click on the Finish button to create the database tables
+    and save the settings. </p>
+<p>It is recommended to click on the <span style="font-weight: bold;">Yes</span>
+    button that will start the Configuration Wizard.</p>
+<p>If you choose not to run the Configuration Wizard by clicking
+    on the <span style="font-weight: bold;">No</span> button, you cannot access
+    most of the modules as they rely on the database tables in STDM. </p>
+<p><span style="font-weight: bold;">Note:</span> This is
+    not applicable for users migrating from older versions of STDM. </p>
+<p>3. If you have no database table for a module you are
+    trying to open, a Database Table Error that looks like the one below&#160;is
+    shown. The missing table specified depends on the module you are trying
+    to launch. </p>
+<p><img  src="1_5/en/images/database_table_error.jpg" alt=""
+        style=" border:none; width:100%; max-width:418px;" border="0"/></p>
+<p>To fix this, you can click on the <span style="font-weight: bold;">Yes</span>
+    button to start the Configuration Wizard. </p>
+
+</body>
+</html>

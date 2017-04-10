@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Adding STDM Data Labels</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Adding a Data Label</h1>
+<p>A data label refers to a label or a text whose value is populated from
+    the STDM database. The source (table and column) of the data label must
+    be specified while designing the template. Thus, when a document is later
+    generated using a template, the data label will be populated / filled
+    by a value from the selected record's column value. </p>
+<p>To add a data
+    Label in Document Designer template, follow the steps below.</p>
+<p>1. Select a data
+    source by choosing a table or a view as shown below. </p>
+<p><img  src="1_5/en/images/data_source.jpg" alt=""
+        style=" border:none; width:100%; max-width:480px;"
+        border="0"/></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    Only the current profile tables and all views in STDM database load. </p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    Make sure you have selected a view of the current profile. STDM generated
+    views start with the profile name. Thus, choose a view that starts with
+    the current profile name. </p>
+<p>2. Select a <span
+        style="font-weight: bold;">referenced table</span>. The <span style="font-weight: bold;">referenced
+ table</span> option is only applicable for view data source (see the image
+    below). &#160;<span style="font-weight: bold;">A referenced table</span>
+    refers to a table that the template will be working for. In other words,
+    the reference table forces the template to only work for a certain entity.
+    &#160;This is useful when <a href="generating_documents_using_templates.htm">Generating
+        a document</a>. </p>
+<p><img  src="1_5/en/images/ref_table.jpg" alt=""
+        style=" border:none; width:100%; max-width:477px;"
+        border="0"/></p>
+<p><span style="font-family: Cambria, serif;
+	 font-size: 11pt;">For this demonstration, the Person table is used 
+ as a referenced table but you can choose any other based on your needs.</span></p>
+<p><span
+        style="font-weight: bold;">Note</span>:
+    The above two steps are mandatory for views and the first step is mandatory
+    for a table data sources.</p>
+<p>3. Click on the
+    <span style="font-weight: bold;">Data Label</span> button located in STDM
+    Document Designer toolbar (see the image below). This enables you to draw
+    a data label in the template.</p>
+<p><img  src="1_5/en/images/image155.gif" alt=""
+        style=" border:none; width:100%; max-width:351px;"
+        border="0"/></p>
+<p>4. Click at one
+    point in the template page and drag the cursor. Release the cursor in
+    the area you wish to add the label box. </p>
+<p>While dragging
+    it, you can see a red box and a cursor that looks like the plus (+) sign
+    <span>as
+ illustrated in the image below.</span></p>
+<p><img  src="1_5/en/images/image156.gif" alt=""
+        style=" border:none; width:100%; max-width:292px;"
+        border="0"/></p>
+<p>When you release
+    it, a box labelled [<span style="font-weight: bold;">STDM Data Field]
+ </span>will be<span style="font-weight: bold;"> </span>created, as shown
+    below. </p>
+<p><img  src="1_5/en/images/image157.gif" alt=""
+        style=" border:none; width:100%; max-width:251px;"
+        border="0"/></p>
+<p>This box [<span
+        style="font-weight: bold;">STDM Data Field] </span>will be replaced
+    by a value that comes from the database. </p>
+<p>5. While the box
+    is selected, open the <a href="stdm_item_properties.htm">STDM item properties</a>
+    to choose the column, the Data Label will use. The Data Field / column
+    will populate the data label when a document is generated using the template.
+</p>
+<p>. <img  src="1_5/en/images/image159.gif" alt=""
+          style=" border:none; width:100%; max-width:480px;"
+          border="0"/></p>
+<p>Choose the column
+    you want the Data Label to use. For instance, for a person, you can choose
+    the <span style="font-weight: bold;">person_first_name</span> column as
+    shown below. </p>
+<p><img  src="1_5/en/images/item_prop_selected.jpg"
+        alt=""
+        style=" border:none; width:100%; max-width:478px;"
+        border="0"/></p>
+<p>When you select
+    a data field, the Data label text will change from&#160;[<span style="font-weight: bold;">STDM
+ Data Field] </span>to the table name you have chosen.<span style="font-weight: bold;"> 
+ </span>See the image below.<span style="font-weight: bold;"> </span></p>
+<p><img
+         src="1_5/en/images/field_filled.jpg" alt="" style=" border:none; width:100%; max-width:97px;"
+        border="0"/></p>
+<p>6. Repeat step
+    4 and 5 to add items from the same view. &#160;If you wish to add a data
+    label from another table, start from step 1.</p>
+
+</body>
+</html>

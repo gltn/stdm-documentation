@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Digitizing in a Spatial Entity Layer</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Digitizing in a Spatial Entity Layer</h1>
+<p>One way of adding a new record in a spatial entity such as spatial unit,
+    is by digitizing a feature using a base map imagery. The other ways of
+    adding a new record are by<a href="importing_spatial_data.htm"> importing
+        a spatial data</a> and by <a href="importing_gps_data.htm">importing a GPS
+        data</a>. </p>
+<p>Ensure the Imagery or base map layer is added on QGIS map canvas. To
+    add an imagery data, follow the steps on<a href="adding_imagery_data.htm">
+        Adding Imagery data topic.</a></p>
+<p>The following steps explain how to digitize a polygon that could be
+    a plot, parcel, structure and any other area. </p>
+<p>You can digitize line or point using similar steps.</p>
+<p>1. Add an imagery data as explained in <a href="adding_imagery_data.htm">Adding
+    Imagery data topic.</a></p>
+<p>2. Then add a spatial entity layer in to QGIS Map Canvas that you wish
+    the new polygon to be added to. </p>
+<p><span>To add a spatial entity layer follow the steps
+ in <a href="adding_a_spatial_entity_layer.htm">Add a Spatial Entity Geometry</a>
+ topic. </span></p>
+<p><span>3. Once the layers are added, you will see them
+ listed as the image below. Make sure the spatial entity layer is above 
+ the imagery. Select and drag and drop to change their order. &#160;</span></p>
+<p><img  src="1_5/en/images/image108.gif" alt=""
+        style=" border:none; width:100%; max-width:339px;" border="0"/></p>
+<p><span>The correct order is the spatial entity layer at
+ the top and the imagery below it, as shown in the image below. This is 
+ needed so that the spatial entity geometry is not hidden under the imagery. 
+ </span></p>
+<p><span><img  src="1_5/en/images/image109.gif" alt=""
+              style=" border:none; width:100%; max-width:345px;"
+              border="0"/></span></p>
+<p><span>4. Select the spatial entity layer
+ to digitize features into, as shown below. </span></p>
+<p><img  src="1_5/en/images/image110.gif" alt=""
+        style=" border:none; width:100%; max-width:342px;" border="0"/></p>
+<p>This results in the placement of the spatial entity geometry
+    above the imagery as shown in the image below.</p>
+<p><img  src="1_5/en/images/image112.gif" alt=""
+        style=" border:none; width:100%; max-width:1113px;" border="0"/></p>
+<p><span>5. Locate the </span><span style="font-weight: bold;">Digitizing</span><span
+> </span><span style="font-weight: bold;">Toolbar</span><span
+> of QGIS that is highlighted in the image below. </span></p>
+<p><span><img  src="1_5/en/images/image113.gif" alt=""
+              style=" border:none; width:100%; max-width:1114px;"
+              border="0"/></span></p>
+<p><span>6. </span><span>Click
+ the </span><span style="font-weight: bold;">Toggle Editing</span><span
+> tool</span><span> in the </span><span
+        style="font-weight: bold;">Digitizing Toolbar</span><span
+> as highlighted below. This will turn your selected
+ layer to edit mode. </span></p>
+<p><img  src="1_5/en/images/image114.gif" alt=""
+        style=" border:none; width:100%; max-width:429px;" border="0"/></p>
+<p><span>7. The </span><span
+        style="font-weight: bold;">Toggle
+ Editing tool</span><span> enables most of the digitizing
+ tools. Select the </span><span style="font-weight: bold;">Add
+ Feature Tool</span><span> as highlighted below. </span></p>
+<p><span><img  src="1_5/en/images/image115.gif" alt=""
+              style=" border:none; width:100%; max-width:426px;"
+              border="0"/><br/>
+8. Find an area on top of which you would like to add a feature. This could 
+ be a demarcated plot, a house, etc. </span></p>
+<p><span>9</span><span>.</span>
+    Zoom close to the area you wish to digitize and start clicking on one
+    of the corners of the area. Then, move your cursor to the next corner
+    and click on the next corner. </p>
+<p><img  src="1_5/en/images/image117.gif" alt=""
+        style=" border:none; width:100%; max-width:620px;" border="0"/></p>
+<p>Do the same for all the corners in the area. </p>
+<p>Once you are done clicking on all corners. Right-click
+    on the area. </p>
+<p>10. A spatial entity form pops up, allowing you to input
+    attribute data on the feature as shown below. </p>
+<p><span><img  src="1_5/en/images/image118.gif" alt=""
+              style=" border:none; width:100%; max-width:915px;"
+              border="0"/><br/>
+Fill out the form and click on the </span><span
+        style="font-weight: bold;">Save</span><span
+> button as shown below. &#160;</span></p>
+<p><img  src="1_5/en/images/image121.gif" alt=""
+        style=" border:none; width:100%; max-width:447px;" border="0"/></p>
+<p><span>This will save the data temporarily
+ until you click on the Save button in the digitizing toolbar. &#160;When 
+ saved, the digitized feature appears on the layer as shown below. </span></p>
+<p><span><img  src="1_5/en/images/image122.gif" alt=""
+              style=" border:none; width:100%; max-width:711px;"
+              border="0"/> </span></p>
+<p><span>Continue adding more features. by
+ repeating </span><span style="font-weight: bold;">Steps
+ 9</span><span> and </span><span
+        style="font-weight: bold;">10</span><span
+>. </span></p>
+<p><span>11. Save your work into STDM database.
+ Your digitized features will only be added into the STDM database when 
+ you click on the Save button in the Digitizing toolbar as highlighted 
+ in the image below. </span></p>
+<p><img  src="1_5/en/images/image123.gif" alt=""
+        style=" border:none; width:100%; max-width:426px;" border="0"/></p>
+<p><span>12. End your editing session by clicking
+ on the </span><span style="font-weight: bold;">Toggle Editing
+ tool</span><span> as highlighted below. </span></p>
+<p><span><img  src="1_5/en/images/image124.gif" alt=""
+              style=" border:none; width:100%; max-width:426px;"
+              border="0"/></span></p>
+<p><span>This will disable all tools as shown
+ below. </span></p>
+<p><span><img  src="1_5/en/images/image125.gif" alt=""
+              style=" border:none; width:100%; max-width:429px;"
+              border="0"/></span></p>
+<p><span>Check your saved data by going to
+ the Entities menu and by selecting the Spatial Entity Menu.</span></p>
+<p><span><img  src="1_5/en/images/image127.gif" alt=""
+              style=" border:none; width:100%; max-width:191px;"
+              border="0"/></span></p>
+<p><span>&#160;This opens your spatial entity
+ Browser. Search for the latest record as shown below.</span></p>
+<p><span><img  src="1_5/en/images/image126.gif" alt=""
+              style=" border:none; width:100%; max-width:661px;"
+              border="0"/></span></p>
+<p><span>In the Entity browser, you can select
+ the record and edit the attribute data. </span></p>
+<p>Tips:</p>
+<p><span style="font-weight: bold;">Undo a
+ selection of a corner:</span><span> To undo a selection
+ of a corner while digitizing, press the </span><span
+        style="font-weight: bold;">Backspace</span><span
+> button on your keyboard. </span></p>
+<p><span style="font-weight: bold;">Undo feature
+ creation:</span><span> To undo a feature creation, that
+ temporarily removes a feature from the layer, click on the </span><span
+        style="font-weight: bold;">Undo</span><span>
+ button on </span><span style="font-weight: bold;">QGIS
+ Edit Menu</span><span>. </span></p>
+<p><span style="font-weight: bold;">Redo feature creation:</span>
+    <span>To redo a feature creation, that temporarily restores
+ a feature from the layer, click on the </span><span
+            style="font-weight: bold;">Redo</span><span
+    > button on QGIS Edit Menu. </span></p>
+<p><span style="font-weight: bold;">Cancel
+ current digitized feature:</span><span> Press the </span><span
+        style="font-weight: bold;">Escape (Esc)</span><span
+> button on your keyboard to stop digitizing and cancel
+ what you have started. </span></p>
+
+</body>
+</html>

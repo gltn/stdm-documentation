@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Failure to Install after Uninstalling Previous Version</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Failure to Install after Uninstalling Previous Versions</h1>
+<p>The failure could happen when the previous version is not properly removed.
+    Follow the steps below to remove the previous version.<br/>
+</p>
+<p>1. Backup the STDM
+    database located in <span style="font-weight: bold;">PostgreSQL</span>
+    <span style="font-weight: bold;">server</span>. <span>If
+ you fail to back up your database</span>, <span style="font-weight: bold;">do 
+ not</span> uninstall the PostgreSQL. </p>
+<p>2. Go to Start Menu
+    or Start Screen and type <span style="font-weight: bold;">programs and
+ features. L</span>aunch <span style="font-weight: bold;">Programs and 
+ Features</span> tool and uninstall the following;</p>
+<div style="list-style-position: outside; list-style-type: disc; margin-left: 24px; 
+	 text-indent: 0px;">
+    <ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;
+			 list-style-type: circle; font-family: Cambria, serif; font-size: 11pt;">
+        <li style="margin-left: 0px; font-family: Cambria, serif; font-size: 11pt;">PostgreSQL
+            9.4 or older versions - if you have backed up your database or
+            do not need your existing database.
+        </li>
+        <li style="margin-left: 0px; font-family: Cambria, serif; font-size: 11pt;">QGIS
+            Wien (2.8.3) for STDM or older versions
+        </li>
+        <li style="margin-left: 0px; font-family: Cambria, serif; font-size: 11pt;">PostGIS
+            2.1.7 or older versions&#160;- if you have backed up your database
+            or if you do not need your existing database.
+        </li>
+    </ul>
+</div>
+<p>2. After the above
+    software packages are uninstalled, go to<span style="font-weight: bold;">
+ C:/Program Files</span> and delete the following directories in case they
+    still exist.</p>
+<div style="list-style-position: outside; list-style-type: disc; margin-left: 24px; 
+	 text-indent: 0px;">
+    <ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;
+			 list-style-type: circle; font-family: Cambria, serif; font-size: 11pt;">
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>QGIS Wien (2.8.3) for
+		 STDM</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>PostgreSQL </span>-
+            if <span>you have backed up your database or do not need your
+		 existing database and uninstalled PostgreSQL</span></li>
+    </ul>
+</div>
+<p>3. &#160;If you have
+    backed up your database or do not need your existing database and uninstalled
+    PostgreSQL, remove the <span style="font-weight: bold;">postgres</span>
+    user. </p>
+<p><span style="font-family: Cambria, serif;">To remove the
+ </span><span style="font-family: Cambria, serif; font-weight: bold;">postgres</span><span
+        style="font-family: Cambria, serif;"> user, go to </span><span style="font-family: Cambria, serif;
+	 font-weight: bold;">Start</span><span style="font-weight: bold;"> 
+ Menu</span> or<span style="font-weight: bold;"> Start Screen</span> and
+    type <span style="font-weight: bold;">cmd</span>, on <span style="font-weight: bold;">Command
+ Prompt</span>. Right click on it and <span style="font-weight: bold;">Run 
+ as Administrator</span>. </p>
+<p><span>On the command prompt window type
+ the command below and press the </span><span
+        style="font-weight: bold;">Enter</span><span
+> key on your keyboard.</span></p>
+<p>net user postgres /delete
+</p>
+
+</body>
+</html>

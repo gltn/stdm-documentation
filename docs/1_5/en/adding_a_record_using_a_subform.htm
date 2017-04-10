@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Adding a Record Using a Subform</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Adding a Record Using a Subform</h1>
+<p>A <span style="font-weight: bold;">Subform</span> is a form that is
+    inserted in another form. The main form is called <span
+            style="font-weight: bold;">Primary</span>
+    form, and the form that is enclosed in <span style="font-weight: bold;">Primary</span>
+    form is called <span style="font-weight: bold;">Subform</span>. A form/subform
+    combination is sometimes referred to as a hierarchical form, a master-detail
+    form, or a parent-child form.</p>
+<p>When you create your profile, there might be cases when one <span style="font-weight: bold;">Entity</span>
+    is related to another <span style="font-weight: bold;">Entity</span>.
+    For instance, you may have an entity called <span style="font-weight: bold;">Person</span>
+    that contains information about an individual. However, &#160;there might
+    be another<span style="font-weight: bold;"> Entity</span> called <span
+            style="font-weight: bold;">Household</span> that contains a general
+    information about the whole family. In this case, you can link the <span
+            style="font-weight: bold;">Person</span> <span style="font-weight: bold;">Entity</span>
+    to the <span style="font-weight: bold;">Household Entity</span> using
+    the <span style="font-weight: bold;">Related</span> <span
+            style="font-weight: bold;">Entity</span>
+    column discussed in <a href="understanding_column_data_types.htm">Understanding
+        Column Data Types</a> topic. When you link two <span style="font-weight: bold;">Entities
+ </span>a <span style="font-weight: bold;">Subform</span> is created in
+    the parent <span style="font-weight: bold;">Entity</span> form. &#160;In
+    this case, in the <span style="font-weight: bold;">Household Entity</span>
+    form a<span style="font-weight: bold;"> Subform</span> for the <span style="font-weight: bold;">Person
+ Entity</span> is created. Consequently, after adding a record in the <span
+            style="font-weight: bold;">Primary</span> form, you can also add a
+    record using the <span style="font-weight: bold;">Subform</span>, which
+    in this case will enable you to add a record for the <span
+            style="font-weight: bold;">Person</span>
+    <span style="font-weight: bold;">Entity</span>. </p>
+<p>The <span style="font-weight: bold;">Subform</span> in STDM data entry
+    form is created in a tab next to the <span style="font-weight: bold;">Primary</span>
+    tab with the name of the child Entity follow by the word <span style="font-weight: bold;">Collection</span>.
+    If the child <span style="font-weight: bold;">Entity</span> is <span style="font-weight: bold;">Person</span>,
+    the <span style="font-weight: bold;">Subform</span> is called <span style="font-weight: bold;">Person
+ Collection</span>. </p>
+<p>To add a record using Subform, follow the steps below. </p>
+<p>1. Add a record into the <span style="font-weight: bold;">Primary</span>
+    form using the steps discussed in <a href="adding_a_record.htm">Adding
+        a Record</a> topic.</p>
+<p>2. Locate the <span style="font-weight: bold;">Subform</span> tab by
+    looking for a tab containing the Entity name followed by Collection. The
+    image below shows a <span style="font-weight: bold;">Farmer Collection</span>
+    tab which is a <span style="font-weight: bold;">Subform</span> of <span
+            style="font-weight: bold;">Household Entity</span>.</p>
+<p><img  src="1_5/en/images/subform.PNG" alt="" style=" border:none; width:100%; max-width:682px;"
+        border="0"/></p>
+<p>3. Click on the <span style="font-weight: bold;">Add</span> button (<img  src="1_5/en/images/add.png"
+                                                                            alt=""
+                                                                            style=" border:none; width:100%; max-width:16px;"
+                                                                            border="0"/>) as shown
+    in the image below.</p>
+<p><img  src="1_5/en/images/subform_add.png" alt="" style=" border:none; width:100%; max-width:682px;"
+        border="0"/></p>
+<p>4. The Subform appears as shown in the image below. Fill out the form
+    and click on the Save button. This will save the record temporarily and
+    also added in the <span style="font-weight: bold;">Subform Entity Browser</span>.
+    It will be saved permanently when you also save the Primary form. </p>
+<p><img  src="1_5/en/images/subform_f.png" alt="" style=" border:none; width:100%; max-width:677px;"
+        border="0"/></p>
+<p>5. You can also upload supporting documents and add more records by
+    clicking on the Save and New button. </p>
+<p>6. Once you have completed adding records in the <span style="font-weight: bold;">Subforms</span>,
+    save the primary form by clicking on the <span style="font-weight: bold;">Save</span>
+    button. This will also save the <span style="font-weight: bold;">Subforms</span>.
+</p>
+<p><span style="font-family: Cambria, serif;
+	 font-size: 11pt;">If the forms are properly entered, a success message 
+ pops up, as shown below. </span></p>
+<p><img  src="1_5/en/images/record_saved.PNG" alt=""
+        style=" border:none; width:100%; max-width:336px;"
+        border="0"/></p>
+<p>A new record will
+    be added in the Entity Browser and you can see it added as a row. </p>
+
+</body>
+</html>

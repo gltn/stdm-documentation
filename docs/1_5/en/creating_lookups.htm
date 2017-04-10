@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Creating Lookups</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 style="font-family: Cambria, serif;">Creating Lookups</h1>
+<p>Lookups are special
+    entities used to store values that rarely change. The values from the
+    lookups are used by other entities with columns of type <span style="font-weight: bold;">Single
+ Select Lookup</span> and <span style="font-weight: bold;">Multiple Select</span>
+    to quickly retrieve values when entering data. &#160;For example, when
+    creating a person entity, the column gender, which has <span style="font-weight: bold;">Single
+ Select Lookup</span> as the data type will have a drop down widget that
+    retrieves values from a lookup entity <span style="font-weight: bold;">check_gender
+ </span><span>illustrated
+ below</span>.</p>
+<p><img
+         src="1_5/en/images/lookups_overview.png" alt="" style=" border:none; width:100%; max-width:816px;"
+        border="0"/></p>
+<p>6.
+    On the <span style="font-weight: bold;">Lookups Viewer</span> section,
+    click the <span style="font-weight: bold;">Add</span> button on the <span
+            style="font-weight: bold;">Action Toolbar </span>as shown below.</p>
+<p><img
+         src="1_5/en/images/action_toolbar_add.png" alt=""
+        style=" border:none; width:100%; max-width:326px;" border="0"/></p>
+<p>7.
+    A <span style="font-weight: bold;">Lookup Entity</span> window will open
+    with a single field to enter a lookup name as shown below.</p>
+<p><img  src="1_5/en/images/lookup_editor.png" alt=""
+        style=" border:none; width:100%; max-width:380px;" border="0"/></p>
+<p>8.
+    Enter the lookup name on the field provided.</p>
+<p>The
+    following are things to remember when entering a lookup name. </p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <li><p
+                style="font-size: 11pt;">Lookup
+            names are all in lower case
+            letters.</p></li>
+        <li><p
+                style="font-size: 11pt;">Spaces
+            within a lookup name are not
+            allowed. All spaces will automatically be converted to an underscore
+            (_) character. &#160;For example, 'marital status' will be&#160;<span
+                    style="font-style: italic;">'marital_status'</span></p></li>
+        <li><p
+                style="font-size: 11pt;">A
+            prefix <span style="font-style: italic;">'check_'</span>
+            is appended on every lookup name. For example, if you create a
+            lookup with name <span style="font-style: italic;">'gender'</span>,
+            the name will be saved as <span style="font-style: italic;">'check_gender'.</span></p>
+        </li>
+    </ul>
+</ul>
+<p>9.
+    To save your lookup and close the <span style="font-weight: bold;">Lookup
+ Editor</span>, click the <span style="font-weight: bold;">OK</span> button.
+    To abort the creation process and close the<span style="font-weight: bold;">
+ Lookup Editor</span>, click the <span style="font-weight: bold;">Cancel</span>
+    button.</p>
+<p>10.
+    If creating and saving of lookup was successful, the new lookup will show
+    on the <span style="font-weight: bold;">Lookups Viewer</span><span
+            style="font-style: italic;">.</span></p>
+<p><span style="font-style: normal;">11. Now you can proceed to </span><a
+        href="Creating_Values.htm" style="font-style: normal; font-weight: bold;">Creating
+    Values</a>&#160;<span style="font-style: normal;">section to add values
+ to this lookup.</span></p>
+<p>Important
+    Notes</p>
+<p><span
+        style="font-weight: bold;">Note 1:</span> When you create a new profile,
+    two lookup entities are created automatically. These are:</p>
+<p style="font-family: Cambria, serif; font-size: 11pt; margin-left: 40px;
+	 font-style: italic;">1. check_social_tenure_relationship_document_type
+</p>
+<p style="font-family: Cambria, serif; font-size: 11pt; margin-left: 40px;
+	 font-style: italic;">2. check_tenure_type</p>
+<p><span
+        style="font-weight: bold;">Note 2:</span> You cannot proceed to the
+    next step of the wizard if a lookup you have created has no values.</p>
+
+</body>
+</html>

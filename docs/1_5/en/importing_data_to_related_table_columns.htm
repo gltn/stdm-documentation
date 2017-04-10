@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="ProgId" content="Word.Document"/>
+    <meta name="Originator" content="Microsoft Word 15"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+
+    <title>Importing Data to Related Table Columns</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1><b>Importing Data to Related
+    Table Columns</b></h1>
+<p>You can import
+    data to a related entity column in the destination table using the <span
+            style="font-weight: bold;">Related Table Translation</span> module.</p>
+<p>In order to implement
+    this translator, the source table must contain at least one column that
+    refers to a unique value in a related table such as a household code that
+    a person belongs to. During the translation process, the system will attempt
+    to lookup this value and extract a corresponding value ideally, the value
+    of the foreign key column and use this value in the primary reference
+    table.</p>
+<p>Example:</b>
+    Say we have a person CSV file that we would like to import to the person
+    table in the STDM database; the source data contains a household code
+    column that refers to the household in which the person belongs to. Through
+    the related table translator, we are able to link each person's row to
+    the corresponding household that he/she belongs to using the household
+    code.</p>
+<p class="MsoNormal"><b>Illustration:</b></p>
+<table style=" width:100%; max-width:655px;">
+    <col style="width: 38.976%;"/>
+    <col style="width: 27.932%;"/>
+    <col style="width: 33.147%;"/>
+    <tr>
+        <td><span><strong
+                style="font-weight: bold; font-family: Cambria, serif;">Surname</strong></span></td>
+        <td><span><strong style="font-weight: bold; font-family: Cambria, serif;">Other
+		 Names</strong></span></td>
+        <td><span><strong style="font-weight: bold; font-family: Cambria, serif;">Household
+		 Code</strong></span></td>
+    </tr>
+    <tr>
+        <td><span style="font-family: Cambria, serif;">Gitau</span></td>
+        <td><span style="font-family: Cambria, serif;">John</span></td>
+        <td><span style="font-family: Cambria, serif;">TY67OP</span></td>
+    </tr>
+    <tr>
+        <td><span style="font-family: Cambria, serif;">Gachoka</span></td>
+        <td><span style="font-family: Cambria, serif;">Agnes</span></td>
+        <td><span style="font-family: Cambria, serif;">NJ89A</span></td>
+    </tr>
+    <tr>
+        <td><span style="font-family: Cambria, serif;">Adhiambo</span></td>
+        <td><span style="font-family: Cambria, serif;">Laureen</span></td>
+        <td><span style="font-family: Cambria, serif;">TY67OP</span></td>
+    </tr>
+    <tr>
+        <td><span style="font-family: Cambria, serif;">Kimani</span></td>
+        <td><span style="font-family: Cambria, serif;">Anthony</span></td>
+        <td><span style="font-family: Cambria, serif;">NJ89A</span></td>
+    </tr>
+</table>
+<p class="MsoCaption" style="font-family: Cambria, serif; font-size: 11pt; 
+	 font-weight: bold; color: #000000;">Table 1: Person data in CSV format</p>
+<p class="MsoNormal"><b>To import this data:</b></p>
+<p><![if !supportLists]><span>1.</span><span
+>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Click
+    on the import icon to load the import data window <span>as
+ shown below.</span></p>
+<p class="MsoListParagraphCxSpMiddle" style="font-family: Cambria, serif; 
+	 font-size: 11pt; margin-left: 48px;"><img  src="1_5/en/images/image002.jpg" v:shapes="Picture_x0020_1"
+                                               alt="" border="0"
+                                               style="width:100%; max-width:594px"/></p>
+<p><![if !supportLists]><span>2.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Specify
+    the data source and select the table type i.e. spatial or textual.</p>
+<p><![if !supportLists]><span>3.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Click
+    <i>Next</i>
+    to select the destination table. In this case, our destination table is
+    <i>person</i>.</p>
+<p class="MsoListParagraphCxSpMiddle" style="font-family: Cambria, serif; 
+	 font-size: 11pt; margin-left: 48px;"><img  src="1_5/en/images/image004.jpg" v:shapes="Picture_x0020_2"
+                                               alt="" border="0"
+                                               style="width:100%; max-width:591px"/></p>
+<p><![if !supportLists]><span>4.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Click
+    <i>Next</i>
+    to load the column matching page. Based on the data provided, we shall
+    match the columns as follows:</p>
+<table style="margin-left: 40px;">
+    <col width="214"/>
+    <col width="214"/>
+    <tr>
+        <td><p><strong>Source Table Columns</strong></p></td>
+        <td><p><strong>Destination Table Column</strong></p></td>
+    </tr>
+    <tr>
+        <td><p><strong>Surname</strong></p></td>
+        <td><p>last_name</p></td>
+    </tr>
+    <tr>
+        <td><p><strong>Other Names</strong></p></td>
+        <td><p>first_name</p></td>
+    </tr>
+    <tr>
+        <td><p><strong>Household Code</strong></p></td>
+        <td><p>Household_id</p></td>
+    </tr>
+</table>
+<p class="MsoListParagraphCxSpFirst" style="font-family: Cambria, serif; 
+	 font-size: 11pt; margin-left: 48px;">&#160;</p>
+<p><img  src="1_5/en/images/image006.jpg" v:shapes="Picture_x0020_4" alt="" border="0"
+        style="width:100%; max-width:590px"/></p>
+<p><![if !supportLists]><span>5.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>We
+    now need to specify how the system should handle and use value from the
+    <i>Household Code</i> column to link
+    it to the <i>household</i> table
+    through the <span class="SpellE"><i>household_id</i></span>
+    column in the <span style="font-weight: bold;">person</span> table. To
+    do this, click on the <span class="SpellE"><i>household_id</i></span>
+    column to select it then click on the <span style="font-weight: bold;">plus
+ sign</span> at the bottom next to the <i>Value
+        translators</i> label. Select <i>Related Table…</i>
+    option to load the dialog for specifying how the data will be linked.</p>
+<p><![if !supportLists]><span>6.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>In
+    the <i>Related
+        Table Translator Configuration</i> dialog, the destination table settings
+    are fixed as they are based on the import configuration that we specified
+    prior to loading the translator dialog. Our focus will be on the <i>Referenced Table
+        Settings</i>
+    – in this case, we want to instruct the system that the <span class="SpellE"><i
+    >household_id</i></span> column
+    in the <i>person</i> table should
+    be linked to <i>id</i> column in
+    the <i>household</i> table. However,
+    we need to further instruct the system that it needs to link this data
+    by using the value from the <i>Household
+        Code</i> column in the CSV file and lookup it up in the <i
+    >code</i>
+    column in the <i>household</i> table.
+    Hence, the dialog settings will be as follows:</p>
+<p><img  src="1_5/en/images/image008.jpg" alt=""
+        style=" border:none; width:100%; max-width:591px;" border="0"/></p>
+<p><![if !supportLists]><span>7.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Click
+    <span style="font-weight: bold;">OK</span> to save these settings.</p>
+<p><![if !supportLists]><span>8.</span><span>&#160;&#160;&#160;&#160;&#160;</span>&#160;<![endif]>Click
+    on Finish to start the import process. STDM will now lookup the household
+    id using the household code and insert it into the <span class="SpellE"><i
+    >household_id</i></span>
+    column in the <i>person</i> table.</p>
+
+</body>
+</html>

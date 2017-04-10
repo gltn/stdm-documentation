@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Modifying Database Connection Settings</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Modifying Database Connection Settings</h1>
+<p>The <span style="font-weight: bold;">Options</span> module enables you
+    to modify your current STDM database connection settings. This setting
+    change requires logging out of STDM for the change to be applied.</p>
+<p>You can change the database server host, port and database connected.
+</p>
+<p>To change the database connection, follow the steps below. </p>
+<p>1. You can type the values in the <span style="font-weight: bold;">Database 
+ Properties</span> box as shown below. </p>
+<p><img  src="1_5/en/images/options_db_connection.JPG" alt=""
+        style=" border:none; width:100%; max-width:627px;" border="0"/></p>
+<p>a. <span style="font-weight: bold;">Host</span><span
+> refers to</span><span> the location of
+ a computer that has hosted the database server (PostgreSQL). If the database 
+ server is installed in your own computer, you have to enter </span><span
+        style="font-weight: bold;">localhost </span><span>as
+ shown above. However, when PostereSQL that holds the database is installed 
+ in an office network, the IP address is different from localhost. It could 
+ be a number like 192.168.0.23 or any other number with such a format as 
+ specified by the system administrator. This is relevant when STDM is installed 
+ for governmental or non-governmental organizations with a centralized 
+ database server. </span></p>
+<p><span>b.</span> <span
+        style="font-weight: bold;">Port</span>
+    <span>refers to an endpoint of communication for the database
+ server (postgreSQL). To access the database from STDM, we need to know 
+ its port. The most common port values for PostgreSQL are </span><span
+    >5432, 5433, or any other port as specified during installation.</span></p>
+<p><span>c.</span> <span style="font-weight: bold;">Database</span>
+    <span>refers to a data storage location in which the entire
+ data of STDM is stored. By default, during installation, it is set as 
+ </span><span>stdm</span><span>. You can enter
+ any other database that you want to connect to after installation using 
+ PostgreSQL administration software called pgAdmin III. If you want to 
+ use your own database, make sure the PostGIS extension is installed and 
+ added to the database that STDM uses. Otherwise, STDM cannot run. </span></p>
+<p>2. If you have already saved a database connection in QGIS's DB Manager,
+    you can extract it by checking on <span style="font-weight: bold;">Extract
+ from existing connection</span> option. </p>
+<p>The drop down next to the checkbox gets enabled and if you have a saved
+    connection. Click on the drop down menu and select one item (see the image
+    below).</p>
+<p><img  src="1_5/en/images/extract_db.jpg" alt="" style=" border:none; width:100%; max-width:626px;"
+        border="0"/></p>
+<p>3. You can also test the connection setting that you have added by clicking
+    on the <span style="font-weight: bold;">Test connection...</span> button
+    as highlighted below.</p>
+<p><img  src="1_5/en/images/options_db_connection_test_con.JPG" alt=""
+        style=" border:none; width:100%; max-width:502px;" border="0"/> &#160;</p>
+<p>When you click on Test connection... button, a popup appears where you
+    have to enter your database username and password (see the image below).</p>
+<p><img  src="1_5/en/images/connection_test1.JPG" alt="" style=" border:none; width:100%; max-width:332px;"
+        border="0"/></p>
+<p>Next, click on the <span style="font-weight: bold;">Test</span> button
+    to check if the database properties you have filled are valid. If the
+    connection is successful, a success message is shown (see the image below).
+</p>
+<p><img  src="1_5/en/images/connection_test.JPG" alt="" style=" border:none; width:100%; max-width:363px;"
+        border="0"/></p>
+<p>A successful connection means that you can change your database connection
+    with no errors. </p>
+<p>Once you have modified the connection setting, click on the <span style="font-weight: bold;">Apply</span>
+    button (<img  src="1_5/en/images/apply.JPG" alt="" style=" border:none; width:100%; max-width:103px;"
+                 border="0"/>).
+</p>
+<p>Logout of STDM for the changes in the database connection to be applied.
+    &#160;</p>
+<p>If you are connecting to a new database or a database that does not
+    have the latest configuration, run the <span style="font-weight: bold;">Configuration
+ Wizard</span> to create STDM database. Failure to do this will mean no
+    access to most modules of STDM. In this case, when you try to access STDM
+    modules you will see an error message similar to the one shown in the
+    image below. </p>
+<p><img  src="1_5/en/images/database_table_error.jpg" alt=""
+        style=" border:none; width:100%; max-width:418px;" border="0"/></p>
+
+</body>
+</html>

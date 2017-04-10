@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Creating Columns</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 style="font-family: Cambria, serif;">Creating Columns</h1>
+<p>Columns are the properties of an
+    entity. Columns are the actual locations where data is stored in a database
+    - think of columns as pigeon holes that hold data values. Each column
+    in an entity must be represented by a unique name and must have a <span
+            style="font-weight: bold;">data type</span> that defines which type
+    of data will be stored in that column. Example of columns for a <span
+            style="font-weight: bold;">Person Entity</span> would be <span
+            style="font-weight: bold;">first_name,
+ last_name, gender or date_of_birth, etc</span><span style="font-weight: bold; 
+													 font-style: italic;">.</span></p>
+<p>To create a column on an entity,
+    follow the steps below.</p>
+<p>1.
+    Click the <span style="font-weight: bold;">Configuration</span><span style="font-weight: bold;">
+ </span><span style="font-weight: bold;">Wizard</span> icon on the <span
+            style="font-weight: bold;">STDM Plugin Menu</span> to open the <span
+            style="font-weight: bold;">Configuration Wizard</span> window.</p>
+<p>t<img
+         src="1_5/en/images/config_wizard_icon.png" alt=""
+        style=" border:none; width:100%; max-width:882px;" border="0"/></p>
+<p>2.
+    When the <span style="font-weight: bold;">Configuration Wizard</span>
+    window opens, click the <span style="font-style: italic;">Next</span>
+    button on the wizard <span style="font-weight: bold;">Navigation Bar</span>
+    (<span style="font-weight: bold;">once</span>) to access the <span style="font-weight: bold;">Profile
+ Page.</span></p>
+<p>3.
+    From <span style="font-weight: bold;">Profile Select</span> drop down,
+    choose a <span style="font-weight: bold;">Profile</span> you want to customize.</p>
+<p><img
+         src="1_5/en/images/profile_dropdown_btn517579448.png" alt=""
+        style=" border:none; width:100%; max-width:405px;" border="0"/></p>
+<p><span
+>4. All the related
+ entities, lookups and lookup values for the selected profile should load 
+ onto various pages of the wizard.</span></p>
+<p>5.
+    Click the <span style="font-weight: bold;">Next</span><span style="font-style: italic;">
+ </span>button on the <span style="font-weight: bold;">Navigation Bar</span>&#160;to
+    access the <span style="font-weight: bold;">Entity Customisation</span>
+    page as shown in the image below.</p>
+<p><img
+         src="1_5/en/images/columns_overview.png" alt="" style=" border:none; width:100%; max-width:817px;"
+        border="0"/></p>
+<p>6.
+    On the <span style="font-weight: bold;">Entities Viewer</span>, click
+    to select an entity to customize. The selected entity should now have
+    a highlighted color indicating selection <span>as
+ shown in the image below</span>.</p>
+<p><img
+         src="1_5/en/images/entity_selection_new.png" alt=""
+        style=" border:none; width:100%; max-width:741px;" border="0"/></p>
+<p>7.
+    If you selected a new entity the <span style="font-weight: bold;">Columns
+ Viewer</span> section should be empty.</p>
+<p>8.
+    On the <span style="font-weight: bold;">Columns Viewer</span> section,
+    click the <span style="font-weight: bold;">Add</span> button on the <span
+            style="font-weight: bold;">Action Toolbar </span><span>as
+ shown in the image below</span>.</p>
+<p><img
+         src="1_5/en/images/action_toolbar_add.png" alt=""
+        style=" border:none; width:100%; max-width:326px;" border="0"/></p>
+<p>9.
+    &#160;A <span style="font-weight: bold;">Column Editor</span> window should
+    now open to enable you create a new column <span>as
+ shown below</span>.</p>
+<p><img
+         src="1_5/en/images/column_editor_new.png" alt="" style=" border:none; width:100%; max-width:372px;"
+        border="0"/></p>
+<p>10.
+    Enter the following details for your column</p>
+<p><span
+        style="font-weight: bold;">a.</span> <span style="font-weight: bold;">Column
+ name</span> - Name used to define a single property on an entity. For
+    example, on an entity <span style="font-style: italic;">Person </span>you
+    can have a property named &#160;<span style="font-style: italic;">first_person.</span></p>
+<p>Important
+    things to remember when entering a Column name;</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <ol>
+            <li style="list-style: decimal;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">&#160;Column
+                name should only be in lower case.</p></li>
+            <li style="list-style: decimal;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">&#160;Spaces
+                are not allowed in a <span style="font-weight: bold;">Column</span>
+                name. All spaces you enter will automatically be replaced
+                with an underscore (_) character.</p></li>
+            <li style="list-style: decimal;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">This
+                field is mandatory; you cannot create a column without it.</p></li>
+        </ol>
+    </ul>
+</ul>
+<p>The following
+    are reserved keywords in STDM; you cannot use them as column names.</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <ul style="list-style: disc;">
+            <li><p style="font-style: italic; font-size: 11pt;">id</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">documents</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">spatial_unit</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">
+                supporting_document</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">social_tenure</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">
+                social_tenure_relationship</p></li>
+            <li><p style="font-style: italic; font-size: 11pt;">Geometry</p></li>
+        </ul>
+    </ul>
+</ul>
+<p><span
+        style="font-weight: bold;">b.</span> <span style="font-weight: bold;">Description</span>
+    - Long string text that explains the meaning of the column in an entity.
+    Field is optional; you can create a column without it.</p>
+<p><span
+        style="font-weight: bold;">c. User tip</span> - Short text that appears
+    next to this column on the data entry form for this entity, guides the
+    users on what to enter on this column. <span style="font-family: Cambria, serif;
+												 font-size: 11pt;">This 
+ field is optional; you can create a column without it.</span></p>
+<p><span
+        style="font-weight: bold;">d. Column data type</span> - Defines the
+    type of value that should be stored in this column in the database. Every
+    column <span style="font-weight: bold;">MUST</span> define a data type
+    property. STDM supports twelve different data types to choose from depending
+    on the value you want to store in your column. <a href="understanding_column_data_types.htm">Understanding
+        Column Data Types</a> topic explains in-depth the meaning of each supported
+    data type. </p>
+<p><span
+        style="font-weight: bold;">e</span><span style="font-weight: bold;">.
+ Columns property button</span> - It opens a window to enter default values
+    for the column depending on the selected data type. Setting of these properties
+    is mandatory for the following data types:</p>
+<ul style="list-style: disc;">
+    <ul style="list-style: disc;">
+        <ul style="list-style: disc;">
+            <li style="font-style: italic;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">Geometry</p></li>
+            <li style="font-style: italic;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">Related
+                Entity</p></li>
+            <li style="font-style: italic;"><p style="font-family: Cambria, serif;
+												 font-size: 11pt;">Single
+                Select Lookup</p></li>
+            <li><p><span
+                    style="font-style: italic;">Multiple Select Looku</span>p</p></li>
+        </ul>
+    </ul>
+</ul>
+<p><span
+        style="font-weight: bold;">f</span><span style="font-weight: bold;">.
+ Mandatory check box</span> - This makes the column a mandatory field when
+    being entered on the data form. </p>
+<p><span
+        style="font-weight: bold;">g</span><span style="font-weight: bold;">.
+ Searchable check box</span> - &#160;Columns marked as searchable will
+    be used as filter fields when searching for an entity in various data
+    browsing windows e.g. the <span style="font-weight: bold;">View Social
+ Tenure Relationship</span> window<span style="font-style: italic;">.</span>
+    <span>Please see below.</span></p>
+<p style="font-family: Cambria, serif; font-size: 11pt; font-style: italic;
+	 margin-left: 40px;"><img  src="1_5/en/images/searchable_columns.png" alt=""
+                              style=" border:none; width:100%; max-width:455px;" border="0"/></p>
+<p><span
+        style="font-weight: bold;">h</span><span style="font-weight: bold;">.
+ Unique check box</span> - When enabled, this box guarantees uniqueness
+    for a record in an entity. No two records in an entity with the same values
+    for the column are allowed.</p>
+<p><span
+        style="font-weight: bold;">i</span><span style="font-weight: bold;">.
+ Column Index check box</span> - This allows an index to be created in
+    the database based on the column. Indexing guarantees speedy results when
+    searching for a record in a database.</p>
+<p>11.
+    &#160;Once you have entered the required fields for the column, click
+    the <span style="font-weight: bold;">OK</span> button to save the column
+    and close the <span style="font-weight: bold;">Column Editor</span> window.
+    However, if you wish to abort your column creation process, click the
+    <span style="font-weight: bold;">Cancel</span> button.</p>
+<p>12.
+    If you saved your column successfully it should now appear on your <span
+            style="font-weight: bold;">Columns Viewer</span> section as illustrated
+    below.</p>
+<p><img
+         src="1_5/en/images/column_new.png" alt="" style=" border:none; width:100%; max-width:735px;"
+        border="0"/><span
+> </span></p>
+
+</body>
+</html>

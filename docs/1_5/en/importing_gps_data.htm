@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Importing GPS data</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Importing GPS Data</h1>
+<p><span style="font-weight: bold;">GPS Feature Import</span> tool is a
+    special functionality within STDM that allows uploading, editing of GPS
+    field recorded features and saving into STDM <span style="font-weight: bold;">Spatial
+ Entity</span>.</p>
+<p><span style="font-weight: bold;">GPS Feature Import</span> tool provides
+    the following functionalists.</p>
+<ul>
+    <ul>
+        <ul>
+            <li><p>Upload of <span style="font-weight: bold;">.gpx</span>
+                files.</p></li>
+            <li><p>Selection of feature type for the uploaded file.</p></li>
+            <li><p>Editing and visualization of a feature.</p></li>
+            <li><p>Creation and saving of feature attribute data.</p></li>
+        </ul>
+    </ul>
+</ul>
+<p>The steps below describe the process of importing GPS recorded features
+    into STDM <span style="font-weight: bold;">Spatial Entity</span>.</p>
+<p>1. Add a spatial entity layer into the map canvas using the steps under
+    <a href="adding_a_spatial_entity_layer.htm">Adding a Spatial Entity Layer</a>
+    topic.</p>
+<p>2. Once the layer is added select the layer in the <span style="font-weight: bold;">Layers</span>
+    panel as shown below. Click on it to select the layer.</p>
+<p><img  src="1_5/en/images/layerspanel.png" alt="" border="0" style="width:100%; max-width:275px"/></p>
+<p>3. On the <span style="font-weight: bold;">Spatial Unit Manager</span>,
+    click on the button <span style="font-weight: bold;">GPS Import Feature</span>
+    as highlighted in the image below.</p>
+<p><img  src="1_5/en/images/gps_button.png" alt="" border="0" style="width:100%; max-width:293px"/></p>
+<p>4. The <span style="font-weight: bold;">GPS Feature Import</span> dialog
+    appears as shown in the image below.</p>
+<p><img  src="1_5/en/images/gps_feature_import.png" alt="" border="0" style="width:100%; max-width:517px"/>
+</p>
+<p>The <span style="font-weight: bold;">GPS Feature Import</span> module
+    loads with a <span style="font-weight: bold;">Feature Import</span> tab
+    and the <span style="font-weight: bold;">Entity Editor</span> that enables
+    you to add a record as discussed in <a href="adding_a_record.htm">Adding
+        a Record</a> topic.</p>
+<p>5. Select the GPX file. When you click on the <span style="font-weight: bold;">Browse</span>
+    button as highlighted below, a window will pop up to allow you to choose
+    a <span style="font-weight: bold;">GPX</span> file from your computer.
+    <span style="font-family: Cambria, serif; font-size: 14.6667px; font-variant-ligatures: normal;
+		 font-variant-caps: normal; orphans: 2; text-align: left; widows: 2; 
+		 -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+		 float: none;">You can also drag</span><span
+            class="Apple-converted-space">&#160;</span><span
+            class="bold_text" style="font-weight: bold; font-family: Cambria, serif;
+	 font-size: 14.6667px; font-variant-ligatures: normal; font-variant-caps: normal; 
+	 orphans: 2; text-align: left; widows: 2; -webkit-text-stroke-width: 0px;">.gpx</span><span
+            class="Apple-converted-space">&#160;</span><span style="font-family: Cambria, serif;
+														 font-size: 14.6667px; 
+														 font-variant-ligatures: normal; 
+														 font-variant-caps: normal; 
+														 orphans: 2; text-align: left; 
+														 widows: 2; -webkit-text-stroke-width: 0px; 
+														 display: inline	 ! important ; 
+														 float: none;">&#160;file 
+ into the file path text box.</span> Once you select a file with an extension
+    of <span style="font-weight: bold;">.gpx</span>, it will be added in the
+    file text box.</p>
+<p><img  src="1_5/en/images/gps_feature_import_browse_btn.PNG" alt="" border="0"
+        style="width:100%; max-width:514px"/></p>
+<p>6. Once the <span style="font-weight: bold;">Feature Type</span> is
+    enabled, click on the drop-down button to select a <span style="font-weight: bold;">GPX
+ Feature type</span> that relates to the added <span style="font-weight: bold;">.gpx</span>
+    file as demonstrated in the previous step.</p>
+<p>Currently the <span style="font-weight: bold;">GPS Feature Import</span>
+    tool supports the following GPX formats;</p>
+<ul>
+    <ul>
+        <ul>
+            <li><p><span style="font-weight: bold;">Waypoint</span>: An
+                individual point among a collection of points with no sequential
+                relationship.</p></li>
+            <li><p><span style="font-weight: bold;">Track</span>: Ordered
+                list of waypoints describing a path or a line.</p></li>
+            <li><p><span style="font-weight: bold;">Route</span>: Ordered
+                list of waypoints representing a series of significant turn
+                or stage points leading to a destination.</p></li>
+        </ul>
+    </ul>
+</ul>
+<p>When you select a feature type, the following takes place.</p>
+<ul>
+    <ul>
+        <ul>
+            <li><p>The GPX Data Editor box is populated with a table containing
+                points that are in the .gpx file. You can select, and unselect
+                points using the checkbox in the first column of the table.</p></li>
+            <li><p>A Preview feature is rendered in QGIS <span style="font-weight: bold;">Map
+			 Canvas</span> as illustrated in the image below. The Preview
+                feature shape changes based on the removal and selection of
+                points. Highlighted points are differentiated with QGIS default
+                selection colour, in this case yellow (see the image below).</p></li>
+        </ul>
+    </ul>
+</ul>
+<p><img  src="1_5/en/images/gps_feature_import_description.PNG" alt="" border="0"
+        style="width:100%; max-width:1158px"/></p>
+<p>The table enables you to choose points you would like to import. This
+    is achieved by clicking on the checkbox shown on the first column of the
+    table if it is not checked.</p>
+<p>Remove points that are not needed or points that are wrongly recorded
+    by removing the selection. To remove the selection, click on the checkboxes
+    on first column.</p>
+<p><span style="font-weight: bold;">A removed point</span>, from which
+    the checkbox selection is removed, is also removed from the feature on
+    map. This results in the change in the shape of the feature.</p>
+<p><span style="font-weight: bold;">An included point</span>, with a checkbox
+    checked, can be seen with a green round marker on the map, as shown in
+    the figure above. This means that the points with a green round colour
+    will be included in the feature created from the GPS points.</p>
+<p>To check all checkboxes, click on the <span style="font-weight: bold;">Select 
+ All</span> button as shown in the image below. This will redraw the feature
+    in the map canvas showing all the data points. All data points would be
+    imported into STDM if this option is chosen.</p>
+<p><img  src="1_5/en/images/gps_select_all_2.PNG" alt="" border="0" style="width:100%; max-width:534px"/>
+</p>
+<p>Click on<span style="font-weight: bold;"> Clear All</span> button (highlighted
+    in the image below) to uncheck all points in the GPX Data Editor and to
+    clear the feature from the map canvas. Doing this prevents you from importing
+    GPX data into STDM as no points would have been checked for import.</p>
+<p><img  src="1_5/en/images/gps_clear_all.PNG" alt="" border="0" style="width:100%; max-width:525px"/></p>
+<p>You can also change the values of the coordinates if needed. Double
+    click on a coordinate (<span style="font-weight: bold;">Longitude</span>
+    or <span style="font-weight: bold;">Latitude</span> field) to change its
+    value as shown in the image below. Complete the edit by hitting <span
+            style="font-weight: bold;">Enter</span>/<span style="font-weight: bold;">Return</span>
+    keys on the keyboard. This has the effect of redrawing the feature on
+    the <span style="font-weight: bold;">Map Canvas</span>.</p>
+<p><img  src="1_5/en/images/gps_edit_point.PNG" alt="" style=" border:none; width:100%; max-width:801px;"
+        border="0"/></p>
+<p>If you want to sort the order of the <span style="font-weight: bold;">Points</span>,
+    you can use the drag and drop feature. To sort the points, select a Point
+    you would like to move. While clicking on the selected row/ <span style="font-weight: bold;">Point</span>,
+    move your cursor to make the row float. You can now move it with your
+    cursor and drop it in a row you want it to be moved as shown in the image
+    below. </p>
+<p><img  src="1_5/en/images/gps_point_drag.jpg" alt="" style=" border:none; width:100%; max-width:536px;"
+        border="0"/></p>
+<p>7. Once you finish choosing the points, click on the<span style="font-weight: bold;"> 
+ Primary</span> tab to add attribute information as shown in the image
+    below.</p>
+<p><img  src="1_5/en/images/gps_feature_import_from.PNG" alt="" border="0"
+        style="width:100%; max-width:523px"/></p>
+<p>Fill out the form with relevant information uploaded supporting documents
+    if needed. You can also upload supporting documents. Using the Collection
+    tab, you can link the record to a related entity if the entity is referenced
+    by another entity. For more in working with Entity Editor, review &#160;<a
+            href="Adding_a_Record.htm">Adding a Record</a> topic.</p>
+<p>Once done, click on the <span style="font-weight: bold;">Save</span>
+    button to add the feature into the spatial entity with its attribute data
+    added using the form. </p>
+<p>A success message, as shown in the image below, pops up. </p>
+<p><img  src="1_5/en/images/gps_success.PNG" alt="" style=" border:none; width:100%; max-width:336px;"
+        border="0"/></p>
+<p>Click on the <span style="font-weight: bold;">OK</span> button on the
+    message box. This will take you back to the Feature Import tab where you
+    can edit, check or uncheck previously uploaded GPX data points. You can
+    as well at this point select different<span style="font-weight: bold;">
+ Feature Type</span> or upload a new GPX file altogether. You can also
+    click on the Cancel button of the GPS Feature Import dialog to close the
+    window, when you finish importing <span style="font-weight: bold;">GPS
+ Features</span>. You can check the result by viewing the added feature
+    in the map canvas and its attribute data in the entity browser.</p>
+<p>If the feature is a <span style="font-weight: bold;">Line</span>, a
+    line will be drawn when the user selects the corresponding vertexes comprising
+    the line feature.</p>
+<p>Similarly, for a <span style="font-weight: bold;">Point</span> feature,
+    only one point is selectable to import to STDM database.</p>
+<p><span style="font-weight: bold;">Note</span>: If you wish to learn about
+    the feature but lack a .gpx file, you can use the STDM Sample data <span
+            style="font-weight: bold;">gpx</span> files. The sample data is located
+    in .<span style="font-weight: bold;">stdm</span> folder under your user
+    folder inside <span style="font-weight: bold;">SampleData/Sample_GPX_Data</span>
+    folder.</p>
+
+</body>
+</html>

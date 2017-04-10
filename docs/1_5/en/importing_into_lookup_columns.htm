@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+    <meta name="search-keywords" content="Lookup Columns, importing"/>
+
+    <title>Importing into Lookup Columns</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Importing into Lookup Columns</h1>
+<p><span>You can
+ import data to a lookup column in the destination table using the</span>
+    <span style="font-weight: bold;">Lookup Table Translation</span> <span>module.</span></p>
+<p>In order to implement
+    this translator, the source table must contain at least one column that
+    refers to a unique value in a related table such as a gender that a person
+    belongs to. During the translation process, the system will attempt to
+    lookup this value and extract a corresponding value ideally, the value
+    of the lookup column and use this value in the primary reference table,
+    which is the lookup table.</p>
+<p>Example:</b>
+    Say we have a person CSV file that we would like to import to the person
+    table in the STDM database; the source data such as a spreadsheet that
+    contains a gender column that has the gender of each record as <span style="font-weight: bold;">Male</span>
+    and <span style="font-weight: bold;">Female</span>. However, if the destination
+    table column uses a gender lookup table, the values in this lookup column
+    is stored as integer, representing the id of the lookup value - Male or
+    Female. Through, the <span style="font-weight: bold;">Lookup Table Translator</span>,
+    we are able convert each value in the csv file that is a text with a value
+    of Male or Female to an integer corresponding to the id of the lookup
+    values - Male and Female.</p>
+<p>The steps below
+    clarifies how you can convert data stored as a text in a source table
+    (csv, shp, etc) to an integer that corresponds to the id of the lookup
+    value being converted from the &#160;source table.</p>
+<p>1. Prepare the
+    source table such as a csv with a lookup value written into it. In this
+    case, a gender information is added with values Male and Female as shown
+    in the image below.</p>
+<p><img  src="1_5/en/images/csv_table.png" alt=""
+        style=" border:none; width:100%; max-width:321px;"
+        border="0"/></p>
+<p>&#160;2. You
+    need to create a lookup table and add the values of Male and Female in
+    the Configuration Wizard as discussed in <a href="creating_lookups.htm">Creating
+        Lookups</a> topic. Make sure the values in the lookup table and in your
+    source table (eg. csv file) have the same case and spelling. Otherwise,
+    it will not import correctly.</p>
+<p>3. Start the
+    Import Data module located in the STDM toolbar as highlighted in the image
+    below.</p>
+<p><img  src="1_5/en/images/import_data.png" alt=""
+        style=" border:none; width:100%; max-width:737px;"
+        border="0"/></p>
+<p>4. Choose the
+    T<span style="font-weight: bold;">extual data</span> radio button and
+    choose the <span style="font-weight: bold;">csv</span> file by clicking
+    on the <span style="font-weight: bold;">Browse</span> button as shown
+    in the image below. You can also use a spatial data if needed.</p>
+<p><img  src="1_5/en/images/import_csv_select.png"
+        alt=""
+        style=" border:none; width:100%; max-width:587px;"
+        border="0"/></p>
+<p>5. Choose the
+    table to which the data is going to be imported into and click on the
+    <span style="font-weight: bold;">Next</span> button. In this case, it
+    is the person table that is selected as highlighted in the image below.</p>
+<p><img  src="1_5/en/images/import_choose_table.png"
+        alt=""
+        style=" border:none; width:100%; max-width:582px;"
+        border="0"/></p>
+<p>6. Align the
+    source and destination columns as shown in the image below so that they
+    are in line and we can import data into the correct column. To align them
+    you can use the up and down arrows or using a drag and drop. &#160;Then
+    check all the columns you want to import data from. Make sure you have
+    also selected the lookup column as shown in the image below.</p>
+<p><img  src="1_5/en/images/import_align_columns.png"
+        alt=""
+        style=" border:none; width:100%; max-width:589px;"
+        border="0"/></p>
+<p>7. Click on the
+    <span style="font-weight: bold;">Value Translators</span> <span
+            style="font-weight: bold;">Plus</span>
+    button and click on <span style="font-weight: bold;">Lookup values</span>
+    menu item as shown in the image below.</p>
+<p><img  src="1_5/en/images/import_lookup_select.png"
+        alt=""
+        style=" border:none; width:100%; max-width:590px;"
+        border="0"/></p>
+<p>8. The <span
+        style="font-weight: bold;">Lookup Translator</span> popup window loads.
+    Choose the lookup table in which the lookup values are translated. In
+    this case we have used the gender lookup so we have to use the gender
+    lookup named <span style="font-weight: bold;">check_gender</span> as shown
+    in the image below.</p>
+<p><img
+         src="1_5/en/images/lookup_translator.png" alt="" style=" border:none; width:100%; max-width:489px;"
+        border="0"/></p>
+<p>9.
+    The <span style="font-weight: bold;">Default lookup value</span> drop
+    down enables you to choose a lookup value to that will be used in case
+    the source table has no value or invalid values. This might be relevant
+    in some cases. Click on the <span style="font-weight: bold;">Ok</span>
+    button.</p>
+<p>10.
+    You can now access the main <span style="font-weight: bold;">Import</span>
+    wizard. Here you can edit the existing value translator using the Edit
+    button or remove it completely. When done, click on the <span
+            style="font-weight: bold;">Finish</span>
+    button to finish the importing. If successful, you will see a success
+    message as shown in the image below.</p>
+<p><img
+         src="1_5/en/images/import_finish.png" alt="" style=" border:none; width:100%; max-width:596px;"
+        border="0"/></p>
+
+</body>
+</html>

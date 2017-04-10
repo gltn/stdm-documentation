@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Adding a Chart</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Adding a Chart</h1>
+<p>You can add charts whose data is derived from the STDM database. Currently,
+    only vertical bar graphs are supported. More chart types will be added
+    in the next major release.</p>
+<p>The charts are best suited for an aggregate data. This requires the
+    creation of more views linked to the default view that comes with STDM.
+    The steps below will enable you understand how to create a basic view.
+    The steps in creating an advanced chart are <span>as
+ shown in the image below.</span></p>
+<p><img  src="1_5/en/images/map.jpg" alt=""
+        style=" border:none; width:100%; max-width:486px;"
+        border="0"/></p>
+<p>When you release
+    it, a box like the image below<span style="font-weight: bold;"> </span>will
+    be<span style="font-weight: bold;"> </span>created. </p>
+<p><img  src="1_5/en/images/chart.jpg" alt=""
+        style=" border:none; width:100%; max-width:349px;"
+        border="0"/></p>
+<p>5. Make sure you have selected the chart box as shown
+    in the above image and open the<span style="font-weight: bold;"> STDM
+ item properties</span> tab. You will see the following. </p>
+<p><img  src="1_5/en/images/chart_tables.jpg" alt=""
+        style=" border:none; width:100%; max-width:767px;" border="0"/></p>
+<p><span style="font-weight: bold;">References</span> refers
+    to any table that is used as a data source of the chart. You will find
+    all tables and views of the current profile. Choose a table that you want
+    the chart data to be based on. </p>
+<p><span style="font-weight: bold;">Data source</span> <span
+        style="font-weight: bold;">field</span> refers to a data source column
+    that is used to link the reference with the data source table. </p>
+<p><span style="font-weight: bold;">Referencing</span> refers
+    to the references table column linking the data source, which has similarity
+    with Data source field in its function here. </p>
+<p>6. Choose Series Properties, which refers to the X axis
+    field and the Y axis label in the chart.</p>
+<p><img  src="1_5/en/images/image166.gif" alt=""
+        style=" border:none; width:100%; max-width:774px;" border="0"/></p>
+<p style="font-family: Cambria, serif; font-size: 11.0pt; mso-fareast-font-family: 'Times New Roman'; 
+	 font-weight: normal;"><b style="font-weight: normal;"><span>The
+ fields and labels in the above image refers to the following. &#160;</span></b></p>
+<p>X
+    Field</span> refers to the column to be used as a source of data for the
+    X- axis. </p>
+<p>X
+    label</span> refers to the label of the X-axis. </p>
+<p>Y
+    label</span> refers to the label of the Y-axis. </p>
+<p>Proceed to choose
+    the Y-axis field in the next box explained in the next step. </p>
+<p>7. Choose the
+    value field (Y-axis value source column), legend name, and chart colour.
+</p>
+<p><img  src="1_5/en/images/y_field.jpg" alt=""
+        style=" border:none; width:100%; max-width:790px;"
+        border="0"/></p>
+<p>Value
+    field</span> refers to the Y-axis value <span>(see
+ in the image above)</span>. The selected column in this case is <span
+            style="font-style: italic;">ownership_type</span> but you can choose
+    any other column you wish. </p>
+<p>Fill
+    colour</span> refers to the colour of the bar in the chart. Click on the
+    <span style="font-weight: bold;">blue box</span> and choose other colours
+    if you would like to change it. </p>
+<p>Legend
+    name</span> refers to the title of the legend box. Normally, this refers
+    to the Y-axis value/ the Value field. </p>
+<p>8. Choose the
+    graph properties by adding title of the chart, and by enabling and setting
+    the position of the legend. See the image below. </p>
+<p><img  src="1_5/en/images/image167.gif" alt=""
+        style=" border:none; width:100%; max-width:526px;"
+        border="0"/></p>
+<p>If you do not
+    check <span style="font-weight: bold;">Insert legend</span> <span style="font-weight: bold;">checkbox</span>,
+    the legend will not be shown in the generated document. </p>
+<p>The default position
+    of the legend is <span style="font-weight: bold;">Automatic</span>, which
+    means, it will be placed anywhere in the chart area where there is a space.
+    This is recommended to avoid overlapping of the legend with the chart
+    bars. You can also choose other positions by clicking on the drop down
+    menu. </p>
+
+</body>
+</html>

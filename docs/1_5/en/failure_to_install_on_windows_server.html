@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Failure to Install on Windows Server</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1><span>F</span>ailure to Install on Windows Server</h1>
+<p><span>The failure could happen because of
+ Windows Server password complexity requirement specified <a
+            href="https://technet.microsoft.com/en-us/library/hh994562(v%3dws.11).aspx">here</a>.
+ </span></p>
+<p><span>Thus, to solve this issue from happening,
+ when setting </span><span style="font-weight: bold;">postgres</span><span
+> user password, follow the requirements below, which
+ is specified by Microsoft.</span></p>
+<p><span>1. Passwords must not contain the user's entire
+ </span><span style="font-weight: bold;">samAccountName</span><span
+> (Account Name) value or entire </span><span
+        style="font-weight: bold;">displayName</span><span
+>
+ (Full Name) value. Both checks are not case sensitive:</span></p>
+<div style="list-style-position: outside; list-style-type: disc; margin-left: 24px; 
+	 text-indent: 0px;">
+    <ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;
+			 list-style-type: circle; font-family: Cambria, serif; font-size: 11pt;">
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>The </span><span
+                style="font-weight: bold;">samAccountName</span><span
+        >
+		 is checked in its entirety only to determine whether it is part 
+		 of the password. If the </span><span style="font-weight: bold;">samAccountName</span><span
+        > is less than three characters long, this check
+		 is skipped.</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>The </span><span
+                style="font-weight: bold;">displayName</span><span
+        >
+		 is parsed for delimiters: commas, periods, dashes or hyphens, 
+		 underscores, spaces, pound signs, and tabs. If any of these delimiters 
+		 are found, the </span><span
+                style="font-weight: bold;">displayName</span><span
+        > is split and all parsed sections (tokens) are confirmed
+		 not to be included in the password. Tokens that are less than 
+		 three characters in length are ignored, and substrings of the 
+		 tokens are not checked. For example, the name &quot;Erin M. Hagens&quot; 
+		 is split into three tokens: &quot;Erin,&quot; &quot;M,&quot; and 
+		 &quot;Hagens.&quot; Because the second token is only one character 
+		 long, it is ignored. Therefore, this user could not have a password 
+		 that included either &quot;erin&quot; or &quot;hagens&quot; as 
+		 a substring anywhere in the password.</span></li>
+    </ul>
+</div>
+<p><span>2. Passwords must contain characters from three
+ of the following five categories:</span></p>
+<div style="list-style-position: outside; list-style-type: disc; margin-left: 24px; 
+	 text-indent: 0px;">
+    <ul style="text-indent: 0px; margin-left: 48px; list-style-position: outside;
+			 list-style-type: circle; font-family: Cambria, serif; font-size: 11pt;">
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>Uppercase characters
+		 of European languages (A through Z, with diacritic marks, Greek 
+		 and Cyrillic characters)</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>Lowercase characters
+		 of European languages (a through z, sharp-s, with diacritic marks, 
+		 Greek and Cyrillic characters)</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>Base 10 digits (0 through
+		 9)</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>Non-alpha-numeric characters:
+		 ~!@#$%^&amp;*_-+=`|\(){}[]:;&quot;'&lt;&gt;,.?/</span></li>
+        <li style="margin-left: 0px; font-family: Cambria, serif;
+			 font-size: 11pt;"><span>Any Unicode character
+		 that is categorized as an alphabetic character but is not uppercase 
+		 or lowercase. This includes Unicode characters from Asian languages.</span></li>
+    </ul>
+</div>
+<p></p>
+</body>
+</html>

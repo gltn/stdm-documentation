@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Language" content="en-UK"/>
+
+    <title>Geo-referencing</title>
+
+
+</head>
+
+<body>
+
+
+
+
+<h1>Geo-referencing</h1>
+<p><span>Geo-referencing is the process of
+ introducing world real coordinates on to a raw image so that the final 
+ product is a spatially enabled map that can give location of features 
+ in the two-dimensional space.</span></p>
+<p><span>Steps:</span></p>
+<p><span>1.</span> <span>Click
+ on the</span> <span>raster menu</span> <span>on
+ the QGIS interface.</span></p>
+<p><img alt=""  src="1_5/en/images/NewItem807.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:332px;"
+        border="0"/></p>
+<p><span>2.</span> <span>&#160;On
+ the drop down content click</span> <span>georeferencer</span>
+    <span>&gt;</span> <span>georeferencer.</span>
+    A d<span>ialog box will appear.</span></p>
+<p><span>The </span><span style="font-weight: bold;">Georferencing</span><span
+> pop up window will appear, allowing you to load &#160;a
+ raster image.</span></p>
+<p><span>3.</span> <span>Click
+ on the button that is highlight in the image below.</span></p>
+<p><img alt=""  src="1_5/en/images/NewItem809.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:200px;"
+        border="0"/></p>
+<p><span
+        class="rvts107" style="font-style: normal; font-weight: normal;">This
+ allows you to browse to where the map is located. </span></p>
+<p><img alt=""  src="1_5/en/images/NewItem515.png"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:643px;"
+        border="0"/></p>
+<p>4. Select the File name you wish to <span
+        style="font-weight: bold;">georeference</span>
+    (Many Image formats are supported).</p>
+<p><span>5.</span>Click Open to load the map.
+    The Raster Data is loaded on the <span style="font-weight: bold;">Georeferening</span>
+    window as shown below.</p>
+<p><img alt=""  src="1_5/en/images/NewItem516.png"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:776px;"
+        border="0"/></p>
+<p><span>6.</span> <span>To set
+ properties of georeferencing, Click the icon</span> <img alt=""  src="1_5/en/images/NewItem306.png"
+                                                          style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:3px;"
+                                                          border="0"/><img alt=""
+                                                                            src="1_5/en/images/NewItem305.png"
+                                                                           style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:38px;"
+                                                                           border="0"/> <span
+>(transformation
+ settings).</span></p>
+<p><span>A dialog box pops up so that you can
+ set the coordinate reference system. &#160;</span></p>
+<p><img alt=""  src="1_5/en/images/NewItem808.bmp"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:454px;"
+        border="0"/></p>
+<p><span>Identify at least two points with
+ well-known points on the map that you will use to georeference with.</span></p>
+<p><span>Assign at least two ground control
+ points (GCPs) to enable the georeferencing.</span></p>
+<p><span>Note:</span> Set the <span
+        style="font-weight: bold;">Transformation type</span>
+    as <span
+            style="font-weight: bold;">Helmert</span> and <span
+            style="font-weight: bold;">Resampling
+ method</span> as <span style="font-weight: bold;">Nearest
+ neighbour</span> so as not to change the colour code of pixel.</p>
+<p><span>In the output raster, give the georeferenced
+ image a name. Next,&#160;select the reference system to be used in Target 
+ SRS.</span></p>
+<p><span>7</span><span>. Select
+ the <b>Load in QGIS when</b> <b
+    >done</b> checkbox and click
+ the </span><span style="font-weight: bold;">OK</span><span
+> button.</span></p>
+<p>8. With identified points on the map and with their coordinates,
+    Use the <span style="font-weight: bold;">Add Point</span> button (<img alt=""
+                                                                            src="1_5/en/images/NewItem520.png"
+                                                                           style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:30px;"
+                                                                           border="0"/>)
+    to add control points on the map.</p>
+<p><span>Once you click at any point on the
+ map, the popup below shows up allowing you to enter the coordinates of 
+ that point.</span></p>
+<p>9. Do this for the other points and then click on the <span class="rvts107"
+                                                               style="font-weight: bold;">OK</span>
+    button for each pair of points
+    entered.</p>
+<p><img alt=""  src="1_5/en/images/NewItem519.png"
+        style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:491px;"
+        border="0"/></p>
+<p><span>1</span><span>0. </span>In
+    the <span style="font-weight: bold;">Georeferencing</span> popup window
+    toolbar, click on the <span style="font-weight: bold;">Run</span> button
+    (<img alt=""  src="1_5/en/images/NewItem303.png"
+          style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:44px;"
+          border="0"/> ) to load all the points.</p>
+<p><span>11.</span> <span>Then</span>
+    <span>close</span> <span>the georeferencer
+ dialog box.</span></p>
+<p><span>12.</span> <span>Load
+ the geo-referenced image using the icon</span> <img alt=""  src="1_5/en/images/NewItem302.png"
+                                                     style=" padding-bottom:1px; padding-top:1px; padding-left:1px; padding-right:1px; width:100%; max-width:50px;"
+                                                     border="0"/><span
+>(open raster) in the QGIS interface view for viewing
+ the geo-referenced image.</span></p>
+<p>Note</span><span
+        style="font-style: italic;">:</span><span style="font-style: italic;">
+ </span><span style="font-style: normal;">This is one way
+ of entering the coordinates during the geo-referencing</span><span>.</span></p>
+
+</body>
+</html>
