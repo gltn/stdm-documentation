@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<toc version="1.0">
+ <item link="preface.htm" name="Preface"/>
+ <item link="introduction.htm" name="Introduction">
+  <item link="what_is_new.htm" name="What's New in STDM Version 1.5?"/>
+  <item link="getting_technical_support.htm" name="Getting Technical Support"/>
+  <item link="system_requirements.htm" name="System Requirements"/>
+ </item>
+ <item link="" name="Installing STDM">
+  <item link="before_installing.htm" name="Before Installing"/>
+  <item link="using_bundled_stdm_installer.htm" name="Using Bundled STDM Installer"/>
+  <item link="installing_from_gltn_plugin_repository.htm" name="Installing From GLTN Plugin Repository"/>
+  <item link="migration_from_previous_version.htm" name="Migration from Previous Version">
+   <item link="automatic_upgrade.htm" name="Automatic Upgrade"/>
+   <item link="manual_upgrade.htm" name="Manual Upgrade"/>
+  </item>
+  <item link="failed_stdm_installation.html" name="Failed STDM Installation">
+   <item link="failure_to_install_after_uninstall.html" name="Failure to Install after Uninstalling Previous Versions"/>
+   <item link="failure_to_install_on_windows_7.htm" name="Failure to Install on Windows 7"/>
+   <item link="failure_to_install_on_windows_server.html" name="Failure to Install on Windows Server"/>
+  </item>
+ </item>
+ <item link="" name="Getting Started with STDM">
+  <item link="user_interface.htm" name="User Interface"/>
+  <item link="logging_in_to_stdm.htm" name="Logging into STDM"/>
+  <item link="logging_out_of_stdm.htm" name="Logging out of STDM"/>
+  <item link="working_with_sample_data.htm" name="Working with Sample Data"/>
+  <item link="resetting_postgresql_password.htm" name="Resetting PostgreSQL Password"/>
+ </item>
+ <item link="" name="Creating and Customizing Data Profiles">
+  <item link="getting_started_with_the_configuration_wizard.htm" name="Getting Started with the Configuration Wizard"/>
+  <item link="creating_draft_configuration.htm" name="Creating Draft Configuration"/>
+  <item link="" name="Configuring Directory Settings">
+   <item link="modifying_supporting_document_path.htm" name="Modifying Supporting Document Path"/>
+   <item link="modifying_documents_output_path.htm" name="Modifying Documents Output Path"/>
+   <item link="modifying_template_path.htm" name="Modifying Template Path"/>
+  </item>
+  <item link="" name="Configuring Profiles">
+   <item link="creating_profiles.htm" name="Creating Profiles"/>
+   <item link="copying_profile.htm" name="Copying Profile"/>
+   <item link="customizing_profiles.htm" name="Customising Profiles"/>
+   <item link="deleting_profiles.htm" name="Deleting Profiles"/>
+  </item>
+  <item link="" name="Configuring Entities">
+   <item link="creating_entities.htm" name="Creating Entities"/>
+   <item link="editing_entities.htm" name="Editing Entities"/>
+   <item link="deleting_entities.htm" name="Deleting Entities"/>
+  </item>
+  <item link="" name="Configuring Columns">
+   <item link="creating_columns.htm" name="Creating Columns"/>
+   <item link="understanding_column_data_types.htm" name="Understanding Column Data Types"/>
+   <item link="editing_columns.htm" name="Editing Columns"/>
+   <item link="deleting_columns.htm" name="Deleting Columns"/>
+   <item link="re-ordering_columns.htm" name="Re-ordering Columns"/>
+  </item>
+  <item link="" name="Configuring Lookups">
+   <item link="creating_lookups.htm" name="Creating Lookups"/>
+   <item link="editing_lookups.htm" name="Editing Lookups"/>
+   <item link="deleting_lookups.htm" name="Deleting Lookups"/>
+  </item>
+  <item link="" name="Configuring Lookup Values">
+   <item link="creating_values.htm" name="Creating Values"/>
+   <item link="editing_values.htm" name="Editing Values"/>
+   <item link="deleting_values.htm" name="Deleting Values"/>
+   <item link="re-ordering_values.htm" name="Re-ordering Values"/>
+  </item>
+  <item link="" name="Defining Social Tenure Relationship Entities">
+   <item link="str_overview.htm" name="Overview of the Social Tenure Relationship Definition"/>
+   <item link="selecting_party_and_spatial_unit_entity.htm" name="Selecting Party and Spatial Unit Entity"/>
+   <item link="setting_one_or_more_parties_per_spatial_unit.htm" name="Setting One or More Parties per Spatial Unit"/>
+  </item>
+  <item link="save_configuration_to_database.htm" name="Save Configuration To Database"/>
+ </item>
+ <item link="managing_tenure_data.htm" name="Managing Entity Data">
+  <item link="managing_administrative_unit.htm" name="Managing Administrative Unit"/>
+  <item link="managing_entities.htm" name="Managing Entities">
+   <item link="adding_a_record.htm" name="Adding a Record"/>
+   <item link="adding_a_record_using_a_subform.htm" name="Adding a Record Using a Subform"/>
+   <item link="querying_a_record.htm" name="Querying a Record"/>
+   <item link="editing_a_record.htm" name="Editing a Record"/>
+   <item link="editing_a_record_using_a_subform.htm" name="Editing a Record Using a Subform"/>
+   <item link="deleting_a_record.htm" name="Deleting a Record"/>
+  </item>
+  <item link="managing_spatial_data.htm" name="Managing Spatial Data">
+   <item link="adding_imagery_data.htm" name="Adding Imagery data"/>
+   <item link="renaming_spatial_entity_layer.htm" name="Renaming Spatial Entity Layer"/>
+   <item link="adding_a_spatial_entity_layer.htm" name="Adding a Spatial Entity Layer"/>
+   <item link="digitizing_in_a_spatial_entity_layer.htm" name="Digitizing in a Spatial Entity Layer"/>
+   <item link="importing_gps_data.htm" name="Importing GPS Data"/>
+   <item link="viewing_spatial_geometry.htm" name="Viewing Extents of Spatial Entity Features"/>
+   <item link="viewing_a_spatial_entity_details.htm" name="Viewing a Spatial Entity Details"/>
+  </item>
+  <item link="managing_social_tenure_relationship.htm" name="Managing Social Tenure Relationship">
+   <item link="creating_social_tenure_relationship.htm" name="Creating Social Tenure Relationship"/>
+   <item link="querying__viewing_social_tenure_relationship.htm" name="Querying/ Viewing Social Tenure Relationship"/>
+   <item link="editing_social_tenure_relationship.htm" name="Editing Social Tenure Relationship"/>
+   <item link="deleting_a_social_tenure_relationship.htm" name="Deleting a Social Tenure Relationship"/>
+  </item>
+ </item>
+ <item link="" name="Designing and Generating Documents">
+  <item link="designing_a_document_template.htm" name="Designing a Document Template">
+   <item link="document_designer.htm" name="Getting Started with Document Designer"/>
+   <item link="database_views_for_document_templates.htm" name="Database Views for Document Templates"/>
+   <item link="tools_of_document_designer.htm" name="Tools of Document Designer">
+    <item link="stdm_document_designer_toolbar.htm" name="STDM Document Designer Toolbar"/>
+    <item link="stdm_data_source.htm" name="STDM Data Source"/>
+    <item link="stdm_item_properties.htm" name="STDM Item Properties"/>
+    <item link="composition.htm" name="Composition"/>
+    <item link="item_properties.htm" name="Item Properties"/>
+    <item link="composer_item_toolbar.htm" name="Composer Item Toolbar"/>
+   </item>
+   <item link="customizing_a_template_page.htm" name="Customizing a Template Page"/>
+   <item link="adding_items_into_a_template.htm" name="Adding Items into a Template">
+    <item link="static_items.htm" name="Static Items">
+     <item link="adding_a_line.htm" name="Adding a Line"/>
+     <item link="add_image.htm" name="Adding an Image"/>
+     <item link="adding_a_label.htm" name="Adding a Label"/>
+    </item>
+    <item link="data_driven_items.htm" name="Data Driven Items">
+     <item link="adding_a_data_label.htm" name="Adding a Data Label"/>
+     <item link="adding_map.htm" name="Adding a Map"/>
+     <item link="adding_a_legend.htm" name="Adding a Legend"/>
+     <item link="adding_photo.htm" name="Adding a Photo"/>
+     <item link="adding_attribute_table.htm" name="Adding an Attribute Table"/>
+     <item link="adding_a_chart.htm" name="Adding a Chart"/>
+    </item>
+   </item>
+   <item link="managing_a_template.htm" name="Managing a Template"/>
+   <item link="tips_and_workarounds.htm" name="Tips and Workarounds"/>
+   <item link="learn_more_about_qgis_print_composer.htm" name="Learn More about QGIS Print Composer"/>
+  </item>
+  <item link="generating_documents_using_templates.htm" name="Generating Documents Using Templates"/>
+ </item>
+ <item link="" name="Managing Data Import and Export">
+  <item link="formatting_spread_sheet_data.htm" name="Formatting Spreadsheet Data"/>
+  <item link="importing_attribute_data.htm" name="Importing Attribute Data"/>
+  <item link="importing_spatial_data.htm" name="Importing Spatial Data"/>
+  <item link="importing_supporting_documents.htm" name="Importing Supporting Documents"/>
+  <item link="importing_data_to_related_table_columns.htm" name="Importing Data to Related Table Columns"/>
+  <item link="importing_into_lookup_columns.htm" name="Importing into Lookup Columns"/>
+  <item link="export_data_from_stdm.htm" name="Export Data from STDM"/>
+ </item>
+ <item link="" name="Settings">
+  <item link="" name="Managing User and Roles">
+   <item link="user_management.htm" name="User Management"/>
+   <item link="role_management.htm" name="Role Management"/>
+   <item link="user_mappings.htm" name="User Mappings"/>
+   <item link="content_authorization.htm" name="Content Authorization"/>
+  </item>
+  <item link="options.htm" name="Options">
+   <item link="changing_the_current_profile.htm" name="Changing the Current Profile"/>
+   <item link="modifying_database_connection_settings.htm" name="Modifying Database Connection Settings"/>
+   <item link="modifying_stdm_folders.htm" name="Modifying STDM Folders"/>
+   <item link="upgrading_old_configuration.htm" name="Upgrading Old Configuration"/>
+  </item>
+ </item>
+ <item link="" name="Annex A: Working with Spatial Data in QGIS">
+  <item link="working_with_gps.htm" name="Working with GPS"/>
+  <item link="before_using_gps.htm" name="Before using GPS"/>
+  <item link="downloading_gps_data_from_qgis.htm" name="Downloading GPS data from QGIS"/>
+  <item link="georeferencing.htm" name="Geo-referencing a Map Image"/>
+ </item>
+</toc>
