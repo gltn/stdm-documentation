@@ -14,10 +14,10 @@
    <item link="automatic_upgrade.htm" name="Automatic Upgrade"/>
    <item link="manual_upgrade.htm" name="Manual Upgrade"/>
   </item>
-  <item link="failed_stdm_installation.html" name="Failed STDM Installation">
-   <item link="failure_to_install_after_uninstall.html" name="Failure to Install after Uninstalling Previous Versions"/>
+  <item link="failed_stdm_installation.htm" name="Failed STDM Installation">
+   <item link="failure_to_install_after_uninstall.htm" name="Failure to Install after Uninstalling Previous Versions"/>
    <item link="failure_to_install_on_windows_7.htm" name="Failure to Install on Windows 7"/>
-   <item link="failure_to_install_on_windows_server.html" name="Failure to Install on Windows Server"/>
+   <item link="failure_to_install_on_windows_server.htm" name="Failure to Install on Windows Server"/>
   </item>
  </item>
  <item link="" name="Getting Started with STDM">
